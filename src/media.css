@@ -1,0 +1,29 @@
+@media screen and (max-width: 1400px){
+    .qr-code{
+        display: none;
+    }
+    .scale-phone-block{
+        width: 100vw;
+        position: relative;
+        bottom: 40vh;
+    }
+}
+@media screen and (max-width: 1000px){
+       .wave-text{
+            display: none;
+        }
+}
+@media screen and (max-width: 800px){
+    .menu{
+        display: block;
+        float: right;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-self: center;
+    }
+    .costs ul{
+        display: none;
+
+    }
+}

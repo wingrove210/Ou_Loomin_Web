@@ -1,5 +1,7 @@
 import './App.css';
 import './index.css';
+import './media.css'
+import menu from './media/menu.png'
 import scalePhone from './media/scale_phone.png'
 import lines from './media/Lines.png'
 import gulls from './media/Gulls.svg'
@@ -47,6 +49,7 @@ function App() {
                           </div>
                       </div>
                   </ul>
+                  <img src={menu} alt="" className="menu" />
               </div>
           </header>
       </div>  

@@ -96,7 +96,7 @@ header{
     flex-direction: column;
 }
 .main-text__block{
-    width: 50%;
+    width: 800px;
     height: 50vh;
     text-align: center;
     align-self: center;
@@ -244,7 +244,10 @@ header{
 .scale-phone-block{
     width: 100vw;
     position: relative;
-    bottom: 50vh;
+    bottom: 45vh;
     /* top: calc(var(--size)*7); */
+}
+.menu{
+    display: none;
 }
 
