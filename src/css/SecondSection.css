@@ -1,0 +1,30 @@
+:root{
+    --size: calc(1vw + 1vw);
+}
+.second-section{
+    position: relative;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+.second-section-image{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.text-block{
+    z-index: 2;
+    width: 50vw;
+    padding-left: 5vw;
+    top: 60vh;
+    position: relative;
+    font-family: 'Open Sans';
+}
+.big-phone-header{
+    font-size: calc(var(--size) * 2);
+}
+.big-phone-content{
+    font-size: calc(var(--size)*0.5);
+}

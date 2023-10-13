@@ -1,4 +1,5 @@
 import './App.css';
+import './index.css';
 import scalePhone from './media/scale_phone.png'
 import lines from './media/Lines.png'
 import gulls from './media/Gulls.svg'
