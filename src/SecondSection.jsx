@@ -29,11 +29,13 @@ import stars from './media/union.svg'
 function SecondSection(){
     return (
         <section className="second-section">
+            <h3 className="logo">OU LOOMIN</h3>
             <div className="text-block">
                 <p class="indulve">Погрузись в момент с нами </p>
                 <h1 class="big-phone-header">Открой мир внутри себя</h1>
                 <p class="big-phone-content">Неважно, новичок вы или опытный медитатор – наше приложение предлагает ряд упражнений, подходящих для каждого. От коротких медитаций на 5 минут до глубоких погружений на час – найдите то, что откликается в вашем сердце.</p>
             </div>
+            
             <img src={phone_girl} alt="" className="second-section-image" />
         </section>
     );
