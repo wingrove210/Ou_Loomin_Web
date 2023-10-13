@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Neue Monteral';
+  src: url('./fonts/Neue-Montreal/NeueMontreal-Regular.woff');
+  font-weight: normal;
+  font-style: normal;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Neue Monteral Bold';
+  src: url('./fonts/Neue-Montreal/NeueMontreal-Bold.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Luxora Grotesk';
+  src: url('./fonts/Luxora-Grotesk/LuxoraGrotesk-BoldItalic.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Luxora Grotesk Bold';
+  src: url('./fonts/Luxora-Grotesk/LuxoraGrotesk-Bold.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lena';
+  src: url('./fonts/Lena/Lena.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lemon Milk';
+  src: url('./fonts/Lemon-Milk/LEMONMILK-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lemon Milk Bold';
+  src: url('./fonts/Lemon-Milk/LEMONMILK-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Kontora';
+  src: url('./fonts/Kontora/Kontora_thin.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Kontora Bold';
+  src: url('./fonts/Kontora/Kontora_bold.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Sotoshi-Variable/Satoshi-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi Bold';
+  src: url('./fonts/Sotoshi-Variable/Satoshi-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Wave';
+  src: url('./fonts/Wave-Font-Beta/WavefontBetaV001-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans/static/OpenSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
