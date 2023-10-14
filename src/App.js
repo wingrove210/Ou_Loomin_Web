@@ -1,37 +1,34 @@
 import './App.css';
 import './index.css';
 import './media.css'
+import {gsap} from 'gsap'
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+
 import menu from './media/menu.png'
 import scalePhone from './media/scale_phone.png'
 import lines from './media/Lines.png'
 import gulls from './media/Gulls.svg'
-import iphone from './media/iphone.png'
-import phone_girl from './media/Rectangle 142.png'
-import Aliana from './media/aliana.png'
-import iphone14pro from './media/iPhone14Pro(1).png'
-import ion_girl from './media/Rectangle143.png'
-import calendar from './media/calendar.png'
-import calendar2 from './media/calendar2.png'
-import activity from './media/activity.png'
-import astrologist from './media/Rectangle28(2).png'
-import gimnastic_girl from './media/Rectangle26.png'
-import meditation from './media/Rectangle28(3).png'
-import button_next from './media/Button-Next.png'
-import button_prev from './media/Button-Prev.png'
-import arrow_forward from './media/arrow_forward.png'
-import section5_phone from './media/iPhone14Pro.png'
-import android from './media/Android.png'
-import apple from './media/Apple.svg'
 import qrcode from './media/grcode.svg'
-import icon_message from './media/Icon.png'
-import plus_sign from './media/Union.png'
 import triangle_play from './media/Polygon.svg'
-import Aliana_section3 from './media/Frame260.png'
-import stars from './media/union.svg'
-import SecondSection from './SecondSection';
+import {useEffect, useRef} from "react";
+
 
 
 function App() {
+    const  scalePhoneRef = useRef()
+
+    useEffect(() =>{
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.fromTo(".scale-phone", {scale:1,y:0}, {
+            scrollTrigger: {
+                trigger: ".scale-phone",
+                scrub: 1,
+            },
+            y: -600,
+            scale: 2
+        })
+    })
+
   return (
     <section className="upper-section">
     <div className="header-section">
@@ -80,7 +77,7 @@ function App() {
               <img src={qrcode} alt="" className="qr-code-img"/>
           </div>
           <div className="scale-phone-block">
-              <img src={scalePhone} alt="" className="scale-phone"/>
+              <img src={scalePhone} alt="" className="scale-phone" ref={scalePhoneRef}/>
           </div>
       </div>
   </section>
