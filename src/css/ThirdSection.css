@@ -1,0 +1,151 @@
+.third-section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 100vh;
+    color: white;
+    padding-right: 15vw;
+    padding-left: 15vw;
+}
+.card-header-section{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.card-header{
+    font-size: 40px;
+    font-family: 'Open Sans';
+    width: 500px;
+    text-transform: uppercase;
+    background: linear-gradient(-20deg, #865BFF 50%, white 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    font-weight: 700;
+}
+.card-block{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    row-gap: 40px;
+    column-gap: 40px;
+    padding-right: 5vw;
+    margin-top: 50px;
+}
+.card-1{
+    
+}
+.card-1, .card-2{
+    text-align: center;
+    border-radius: 31px;
+    background-color: #050308;
+    padding: 40px;
+}
+.card-2{
+    padding-bottom: 0px;
+}
+.card-3{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: #050308;
+    border-radius: 31px;
+    background-image: url('../media/Rectangle143.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 550px;
+
+}
+.card-content{
+    font-family: 'Kontora';
+}
+.ion-girl-header, .person-name, .basic, .phone-card-content{
+    margin-bottom: 10px;
+    font-family: 'Kontora';
+}
+.ion-girl-content{
+    line-height: 25px;
+    font-family: 'Kontora';
+}
+@media  screen and (max-width:1400px) {
+    .third-section{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        top: 100vh;
+        color: white;
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+}
+@media  screen and (max-width:1000px) {
+    .third-section{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        top: 100vh;
+        color: white;
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+    .card-block{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 30px;
+        column-gap: 30px;
+        padding-right: 5vw;
+        margin-top: 50px;
+    }
+}
+@media  screen and (max-width:800px){
+    .card-block{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        column-gap: 40px;
+        padding-right: 0;
+    }
+    .card-3{
+      order: 3;
+      padding-right: 30px;
+      padding-left: 30px;
+      height: 100vh;
+      padding-top: 660px;
+    }
+    .phone-card-content, .card-content{
+         font-size: 16px;
+    }
+    .card-2{
+        padding-bottom: 0px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+@media  screen and (max-width:400px){
+    .card-block{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        column-gap: 40px;
+        padding-right: 0;
+    }
+    .card-3{
+      order: 3;
+      padding-right: 30px;
+      padding-left: 30px;
+      height: 70vh;
+      padding-top: 350px;
+    }
+    .phone-card-content, .card-content{
+         font-size: 12px;
+    }
+    .card-2{
+        padding-bottom: 0px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}

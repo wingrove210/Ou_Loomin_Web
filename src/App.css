@@ -11,6 +11,9 @@
 html::-webkit-scrollbar{
     width: 0;
 }
+html{
+    width: 100%;
+}
 body{
     background-color: #0F0A18;
 }
