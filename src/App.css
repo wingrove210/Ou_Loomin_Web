@@ -13,6 +13,7 @@ html::-webkit-scrollbar{
 }
 html{
     width: 100%;
+    overflow-x: hidden;
 }
 body{
     background-color: #0F0A18;
@@ -248,9 +249,9 @@ header{
     width: 100vw;
     position: relative;
     bottom: 45vh;
-    /* top: calc(var(--size)*7); */
 }
 .menu{
     display: none;
 }
+
 

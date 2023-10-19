@@ -1,0 +1,85 @@
+.open-world{
+    position: relative;
+    top: 180vh;
+    color: white;
+    min-width: 1650px;
+}
+.world-header-section{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.open-world-header{
+    font-size: 76px;
+    width: 50%;
+    text-align: center;
+}
+.flex-cards-top{
+    display: flex;
+    gap: 1520px;
+    width: 1920px;
+    overflow-x: hidden;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
+}
+.meditation-lower-block{
+    background-image: url('../media/Rectangle28(3).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.flex-middle-section{
+    display: flex;
+    width: 1920px;
+    padding-right: 15vw;
+    padding-left: 15vw;
+    justify-content: space-between;
+    /* bottom: 5vw; */
+    position: relative;
+}
+.astrologist{
+    background-image: url('../media/Rectangle28(2).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.flex-bottom-section{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+.individual-training{
+    background-image: url('../media/Rectangle26.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 25%;
+}
+.phone-image-bottom{
+    width: 100vw;
+    text-align: center;
+}
+.phone-image-bottom img{
+    width: 28vw;
+    bottom: 100vh;
+    position: relative;
+}
+.astrologist{
+    padding-left: 50px;
+    padding-right: 90px;
+    border-radius: 42px;
+    padding-top: 30px;
+}
+.astrologist h2{
+    font-size: 34px;
+}
+.individual-training{
+    padding-top: 200px;
+    padding-right: 70px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+}
+.individual-training h2{
+    margin-bottom: 40px;
+}

@@ -1,13 +1,19 @@
 :root{
     --size: calc(1vw + 1vw);
 }
+html{
+    overflow-x:hidden;
+    background-color: #0F0A18;
+    width: 100vw;
+}
 
 .meditation-way{
     position: relative;
     color: white;
-    top: 120vh;
+    top: 140vh;
     padding-right: 10vw;
     padding-left: 10vw;
+    width: 100vw;
 }
 .way-header{
     font-size: 50px;
@@ -46,7 +52,7 @@
 }
 .way-phone-card-text{
     padding-top: 40px;
-    width: 50%;
+    width: 70%;
 }
 .way-calendar{
     display: flex;
@@ -80,6 +86,18 @@
     top: 100px;
     font-size: calc(var(--size)*0.5);
 }
+.calender-card-text{
+    width: 70%;
+    margin-right: 20px;
+}
+.calender-card-header{
+    margin-bottom: 20px;
+    font-size: 27px;
+}
+.way-content{
+    width: 90%;
+    padding-left: 5vw;
+}
 @media screen and (max-width:1200px) {
     .meditation-way{
         position: relative;
@@ -102,12 +120,16 @@
         text-align: center;
         font-size: calc(var(--size)*1.2);
     }
+    .way-content{
+        width: 90%;
+        padding-left: 0px;
+    }
 }
 @media screen and (max-width:800px) {
     .meditation-way{
         position: relative;
         color: white;
-        top: 250vh;
+        top: 200vh;
         padding-right: 3vw;
         padding-left: 3vw;
     }
@@ -116,9 +138,6 @@
         margin-bottom: 30px;
         width: 180px;
         text-align: center;
-    }
-    .iphone-image{
-        transform: scale(0.9);
     }
     .phone-card-block{
         display: flex;
@@ -132,17 +151,27 @@
         height: 85%;
         bottom: 30px;
         position: relative;
-        /* transform: scale(0.8); */
-    }
-    .way-phone-card{
-        /* transform: scale(0.9); */
     }
     .calender-card-abzats{
         top: 100px;
-        font-size: 7px;
+        font-size: 13px;
     }
     .phone-card-way-content{
         text-align: center;
-        font-size: 7px;
+        font-size: 13px;
+    }
+    .way-calendar{
+        zoom: 65%;
+    }
+    .way-phone-card{
+        zoom: 65%;
+    }
+    .calender-card-abzats{
+        top: 100px;
+        font-size: calc(var(--size)*1.6);
+    }
+    .phone-card-way-content{
+        text-align: center;
+        font-size: calc(var(--size)*1.6);
     }
 }

@@ -1,0 +1,66 @@
+.accordion{
+    position: relative;
+    top: 220vh;
+    color: white;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.accordion-header-section{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.accordion-header{
+    font-size: 54px;
+}
+.accordion-block{
+    width: 100%;
+}
+.accordion-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px white solid;
+}
+.accordion-text-block{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+}
+.plus-sign{
+    width: 23px;
+    height: 23px;
+}
+.plus-sign-section{
+    border-left: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+.number-section{
+    border-right: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+.number{
+    font-size: 20px;
+}
+.plus-sign-section, .number-section, .accordion-text{
+    padding: 30px 40px;
+}
+@media screen and (max-width:800px){
+    .accordion-text-block{
+        width: 90%;
+        display: flex;
+        gap: 10px;
+    }
+    .plus-sign-section, .number-section, .accordion-text{
+        padding: 20px 10px;
+    }
+    .accordion{
+        position: relative;
+        top: 240vh;
+        color: white;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}

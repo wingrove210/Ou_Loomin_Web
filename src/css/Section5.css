@@ -1,0 +1,114 @@
+:root {
+    --text-color2: 256, 256, 256;
+    --primary-color2: 111, 76, 255;
+    --size: calc(1vw + 1vw);
+}
+html{
+    overflow-x:hidden;
+}
+.world-inside{
+    position: relative;
+    top: 150vh;
+    color: white;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    width: 100vw;
+}
+.world-inside-block{
+    display: flex;
+    gap: 80px;  
+}
+.buttons-low-2{
+    position: relative;
+    top: 40px;
+    display: flex;
+    gap: 20px;
+}
+.world-inside-header{
+    font-size: 76px;
+    margin-bottom: 40px;
+}
+.world-inside-content{
+    font-size: calc(var(--size)*0.7);
+}
+.world-inside-content-2{
+    display: none;
+}
+@media screen and (max-width:1200px){
+    .world-inside{
+        position: relative;
+        top: 150vh;
+        color: white;
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+    .try-btn, .watch-video{
+        padding : 12px 30px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1000px){
+    .world-inside{
+        position: relative;
+        top: 150vh;
+        color: white;
+        padding-right: 8vw;
+        padding-left: 8vw;
+    }
+    .world-inside-block{
+        display: flex;
+        gap: 80px;  
+        flex-direction: column;
+    }
+    .world-inside-header{
+        order: 1;
+    }
+    .world-inside-phone-img{ 
+        width: 50vw;
+    }
+    .world-phone-section{
+        display: flex;
+        width: 90vw;
+        order: 2;
+        justify-content: center;
+    }
+    .world-inside-content{
+        font-size: 20px;
+    }
+    .world-inside-header{
+        font-size: 34px;
+        margin-bottom: 40px;
+    }
+    .buttons-low-2{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:800px){
+    .world-inside{
+        position: relative;
+        top: 220vh;
+        color: white;
+        padding-right: 7vw;
+        padding-left: 7vw;
+    }
+    .buttons-low-2{
+        display: none;
+    }
+    .world-inside-content{
+        display: none;
+    }
+    .world-inside-content-2{
+        display: block;
+        order: 3;
+    }
+    .world-phone-section{
+        display: flex;
+        width: 90vw;
+        order: 2;
+        justify-content: center;
+        position: relative;
+    }
+    .world-inside-phone-img{ 
+        width: 70vw;
+    }
+}

@@ -1,5 +1,5 @@
 import './css/SecondSection.css'
-import phone_girl from './media/Rectangle 142.png'
+import phone_girl from './media/Rectangle 142.png';
 
 function SecondSection(){
     return (
