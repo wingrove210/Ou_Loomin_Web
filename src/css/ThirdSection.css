@@ -66,13 +66,33 @@ html{
 .card-content{
     font-family: 'Kontora';
 }
-.ion-girl-header, .person-name, .basic, .phone-card-content{
+.ion-girl-header{
     margin-bottom: 10px;
+    font-family: 'Open Sans';
+}
+.person-name{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    padding-top: 10px;
+}
+.basic{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    padding-top: 10px;
+}
+.card-content{
     font-family: 'Kontora';
+    font-size: 15px;
+    padding-top: 10px;
+}
+.phone-card-content{
+    font-family: 'Kontora';
+    font-size: 15px;
+    padding-bottom: 15px;
 }
 .ion-girl-content{
-    line-height: 25px;
-    font-family: 'Kontora';
+    line-height: 20px;
+    font-family: 'Open Sans';
 }
 @media  screen and (max-width:1400px) {
     .third-section{

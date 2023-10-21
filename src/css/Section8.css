@@ -12,6 +12,7 @@
 }
 .accordion-header{
     font-size: 54px;
+    font-family: 'Montserrat';
 }
 .accordion-block{
     width: 100%;
@@ -26,6 +27,7 @@
     width: 60%;
     display: flex;
     gap: 10px;
+    font-family: 'Open Sans';
 }
 .plus-sign{
     width: 23px;
@@ -43,6 +45,7 @@
 }
 .number{
     font-size: 20px;
+    font-family: 'Open Sans';
 }
 .plus-sign-section, .number-section, .accordion-text{
     padding: 30px 40px;

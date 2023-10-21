@@ -16,10 +16,18 @@
     letter-spacing: 2px;
     font-size: 16px;
     text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+.ou-loomin{
+    font-family: 'Open Sans Thin';
+    font-weight: 100;
 }
 .slider-header{
-    font-size: 65px;
+    font-size: 55px;
     text-align: center;
+    font-family: 'Open Sans Bold';
+    font-weight: 900;
 }
 .slwiper{
     display: flex;
@@ -40,15 +48,18 @@
     padding-top: 20px;
     padding-left: 20px;
     margin-bottom: 20px;
+    font-family: 'Kontora';
 }
 .slide-header{
-    font-size: 45px;
+    font-size: 35px;
     margin-bottom: 20px;
+    font-family: 'Montserrat';
 }
 .slide-price{
-    font-size: 55px;
+    font-size: 50px;
     padding-bottom: 30px;
     border-bottom: 2px white solid;
+    font-family: 'Montserrat';
 }
 .choose{
     background-color: #5000FA;
@@ -60,6 +71,7 @@
     margin-left: 45px;
     color: white;
     box-shadow: 0px 1px 19px 3px rgb(167, 146, 167);
+    font-family: 'Montserrat';
 }
 .under-slider-btn-section{
     width: 100%;

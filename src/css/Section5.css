@@ -27,12 +27,15 @@ html{
 .world-inside-header{
     font-size: 76px;
     margin-bottom: 40px;
+    font-family: 'Open Sans';
 }
 .world-inside-content{
     font-size: calc(var(--size)*0.7);
+    font-family: 'Open Sans';
 }
 .world-inside-content-2{
     display: none;
+    font-family: 'Open Sans';
 }
 @media screen and (max-width:1200px){
     .world-inside{

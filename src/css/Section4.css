@@ -17,7 +17,8 @@ html{
 }
 .way-header{
     font-size: 50px;
-    width: 360px;
+    width: 370px;
+    font-family: 'Open Sans';
 }
 .meditation-grid{
     display: grid;
@@ -45,6 +46,8 @@ html{
     font-size: 27px;
     width: 200px;
     text-align: center;
+    font-family: 'Open Sans';
+    margin-bottom: 20px;
 }
 .phone-card-way-content{
     text-align: center;
@@ -53,6 +56,7 @@ html{
 .way-phone-card-text{
     padding-top: 40px;
     width: 70%;
+    font-family: 'Kontora';
 }
 .way-calendar{
     display: flex;
@@ -89,14 +93,18 @@ html{
 .calender-card-text{
     width: 70%;
     margin-right: 20px;
+    font-family: 'Kontora';
+    text-align: left;
 }
 .calender-card-header{
     margin-bottom: 20px;
     font-size: 27px;
+    font-family: 'Open Sans';
 }
 .way-content{
     width: 90%;
     padding-left: 5vw;
+    font-family: 'Open Sans';
 }
 @media screen and (max-width:1200px) {
     .meditation-way{

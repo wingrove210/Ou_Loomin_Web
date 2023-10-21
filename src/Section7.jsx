@@ -10,7 +10,7 @@ function Section7(){
             <h1 className="slider-header">РАСШИРЬ ВОЗМОЖНОСТИ</h1>
         </div>
         <div className="under-slider-header-section">
-            <p className="under-slider-header">тарифные планы в ou loomin</p>
+            <p className="under-slider-header">тарифные планы в <span className='ou-loomin'>ou loomin</span></p>
         </div>
         <ul className="slwiper">
         <img src={buttonPrev} alt="" className="btn-prev"/>
