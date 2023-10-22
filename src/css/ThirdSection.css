@@ -9,22 +9,33 @@ html{
     color: white;
     padding-right: 15vw;
     padding-left: 15vw;
+    background: radial-gradient(
+        circle,
+        #4e21c9 3%,
+        #381f6a 20%,
+        #251741 25%,
+        #1a112c 30%,
+        #0F0A18 40%,
+        #0F0A18 50%
+      );
 }
 .card-header-section{
     width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
+    position: relative;
+    bottom: 200px;
 }
 .card-header{
     font-size: 40px;
     font-family: 'Open Sans';
     width: 500px;
     text-transform: uppercase;
-    background: linear-gradient(-20deg, #865BFF 50%, white 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #0B2349;
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to bottom, white, #7037EB);
     display: table;
     font-weight: 700;
 }
@@ -35,6 +46,8 @@ html{
     column-gap: 40px;
     padding-right: 5vw;
     margin-top: 50px;
+    position: relative;
+    bottom: 200px;
 }
 .card-1{
     
@@ -93,6 +106,13 @@ html{
 .ion-girl-content{
     line-height: 20px;
     font-family: 'Open Sans';
+}
+.photo-rounded{
+        border-radius: 50%;
+        margin: 20px;
+        -webkit-box-shadow: 2px 2px 5px 0px rgb(255, 255, 255);
+        -moz-box-shadow: 2px 2px 5px 0px rgba(255, 255, 255, 1);
+        box-shadow: 0px 0px 30px 3px rgb(107, 66, 136);
 }
 @media  screen and (max-width:1400px) {
     .third-section{

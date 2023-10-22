@@ -14,17 +14,32 @@ html{
     padding-right: 10vw;
     padding-left: 10vw;
     width: 100vw;
+    background: radial-gradient(
+        circle,
+        #4e21c9 3%,
+        #381f6a 10%,
+        #251741 15%,
+        #1a112c 20%,
+        #0F0A18 35%,
+        #0F0A18 40%
+      );
 }
 .way-header{
     font-size: 50px;
     width: 370px;
     font-family: 'Open Sans';
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to bottom, white, #7037EB);
 }
 .meditation-grid{
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 50px;
     row-gap: 50px;
+    bottom: 100px;
+    position: relative;
 }
 .phone-card-block{
     display: flex;
@@ -41,13 +56,20 @@ html{
     display: flex;
     justify-content: center;
 }
+.way-phone-card{
+    height: 100%;
+}
 .phone-card-header{
     margin-bottom: 30px;
     font-size: 27px;
-    width: 200px;
+    width: 220px;
     text-align: center;
     font-family: 'Open Sans';
     margin-bottom: 20px;
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to bottom, white, #7037EB);
 }
 .phone-card-way-content{
     text-align: center;
@@ -62,7 +84,13 @@ html{
     display: flex;
     background-color: black;
     height: 362px;
-    padding: 30px 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background: radial-gradient(at 100% 90%, #6F3CF6 10%,#4b338e 20%,#36285e 30%,#1f1831 40%, #000 80%);
+    height: 90%;
+    
 
 }
 .calendar-acrivity{
@@ -95,11 +123,19 @@ html{
     margin-right: 20px;
     font-family: 'Kontora';
     text-align: left;
+    position: relative;
+    bottom: 100px;
+    top: 40px;
 }
 .calender-card-header{
     margin-bottom: 20px;
     font-size: 27px;
+    width: 200px;
     font-family: 'Open Sans';
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to bottom, white, #7037EB);
 }
 .way-content{
     width: 90%;

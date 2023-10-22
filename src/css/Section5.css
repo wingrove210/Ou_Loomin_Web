@@ -13,6 +13,16 @@ html{
     padding-right: 10vw;
     padding-left: 10vw;
     width: 100vw;
+    background: radial-gradient(
+        ellipse,
+        #4e21c9 1%,
+        #381f6a 15%,
+        #251741 25%,
+        #1a112c 40%,
+        #0F0A18 65%,
+        #0F0A18 70%
+
+      );
 }
 .world-inside-block{
     display: flex;
@@ -28,6 +38,10 @@ html{
     font-size: 76px;
     margin-bottom: 40px;
     font-family: 'Open Sans';
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to bottom, white, #7037EB);
 }
 .world-inside-content{
     font-size: calc(var(--size)*0.7);

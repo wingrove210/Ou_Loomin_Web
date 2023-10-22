@@ -23,6 +23,7 @@
     font-size: 18px;
     text-align: center;
     font-family: 'Open Sans';
+    color: #77798F;
 }
 .lower-block{
     background-image: url('../media/Rectangle\ 5\(1\).png');
@@ -80,6 +81,7 @@ footer ul {
     margin-top: 30px;
     color: #77798F;
     font-family: 'Open Sans';
+    box-shadow: -19px -20px 100px 20px #6633EE;
 }
 .buttons-lowest ul{
     display: flex;
@@ -247,7 +249,7 @@ footer ul {
         background-color: #010314;
         padding: 10px 10px;
         margin-top: 30px;
-        font-size: 12px;
+        font-size: 10px;
     }
     footer ul {
         list-style: none;
@@ -260,6 +262,13 @@ footer ul {
         justify-content: center;
         padding-right: 10vw;
         padding-left: 10vw;
+    }
+    .prices li{
+        width: 200px;
+        line-height: 50px;
+    }
+    .documents li{
+        line-height: 50px;
     }
 }
 

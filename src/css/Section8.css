@@ -4,18 +4,27 @@
     color: white;
     padding-left: 5vw;
     padding-right: 5vw;
+    background: radial-gradient(at 50% 190%, #6F3CF6 3%,#4b338e 10%,#36285e 30%,#1f1831 50%, #0F0A18 70%);
 }
 .accordion-header-section{
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
+    position: relative;
+    bottom: 150px;
 }
 .accordion-header{
     font-size: 54px;
     font-family: 'Montserrat';
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, white, #7037EB);
 }
 .accordion-block{
     width: 100%;
+    position: relative;
+    bottom: 150px;
 }
 .accordion-item{
     display: flex;
