@@ -6,11 +6,13 @@ import triangle_play from './media/Polygon.svg';
 function Section7(){
     return(
         <section className="slider-section">
-        <div className="slider-header-section">
-            <h1 className="slider-header">РАСШИРЬ ВОЗМОЖНОСТИ</h1>
-        </div>
-        <div className="under-slider-header-section">
-            <p className="under-slider-header">тарифные планы в <span className='ou-loomin'>ou loomin</span></p>
+        <div className="header-strings">
+            <div className="slider-header-section">
+                <h1 className="slider-header">РАСШИРЬ ВОЗМОЖНОСТИ</h1>
+            </div>
+            <div className="under-slider-header-section">
+                <p className="under-slider-header">тарифные планы в <span className='ou-loomin'>ou loomin</span></p>
+            </div>
         </div>
         <ul className="slwiper">
         <img src={buttonPrev} alt="" className="btn-prev"/>

@@ -1,6 +1,6 @@
 .open-world{
     position: relative;
-    top: 180vh;
+    margin-top: 180vh;
     color: white;
     min-width: 1650px;
 }

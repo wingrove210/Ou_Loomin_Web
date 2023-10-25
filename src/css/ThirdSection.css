@@ -5,7 +5,7 @@ html{
     width: 100vw;
     height: 100vh;
     position: relative;
-    top: 100vh;
+    margin-top: 60vh;
     color: white;
     padding-right: 15vw;
     padding-left: 15vw;
@@ -25,7 +25,7 @@ html{
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 200px;
+    margin-bottom: 100px;
 }
 .card-header{
     font-size: 40px;
@@ -38,6 +38,7 @@ html{
 	background-image: linear-gradient(to bottom, white, #7037EB);
     display: table;
     font-weight: 700;
+    margin-top: -150px;
 }
 .card-block{
     display: grid;
@@ -45,9 +46,9 @@ html{
     row-gap: 40px;
     column-gap: 40px;
     padding-right: 5vw;
-    margin-top: 50px;
+    margin-top: -100px;
     position: relative;
-    bottom: 200px;
+    margin-bottom: 0px;
 }
 .card-1{
     
@@ -119,7 +120,6 @@ html{
         width: 100vw;
         height: 100vh;
         position: relative;
-        top: 100vh;
         color: white;
         padding-right: 5vw;
         padding-left: 5vw;
@@ -130,7 +130,6 @@ html{
         width: 100vw;
         height: 100vh;
         position: relative;
-        top: 100vh;
         color: white;
         padding-right: 5vw;
         padding-left: 5vw;
@@ -167,6 +166,9 @@ html{
         padding-right: 20px;
         padding-left: 20px;
     }
+    .ion-girl-header{
+        margin-top: -200px;
+    }
 }
 @media  screen and (max-width:400px){
     .card-block{
@@ -180,7 +182,7 @@ html{
       order: 3;
       padding-right: 30px;
       padding-left: 30px;
-      height: 70vh;
+      height: 100vh;
       padding-top: 350px;
     }
     .phone-card-content, .card-content{
@@ -190,5 +192,8 @@ html{
         padding-bottom: 0px;
         padding-right: 20px;
         padding-left: 20px;
+    }
+    .ion-girl-header{
+        margin-top: 30px;
     }
 }

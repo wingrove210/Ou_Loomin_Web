@@ -8,7 +8,7 @@ html{
 }
 .world-inside{
     position: relative;
-    top: 150vh;
+    margin-top: 50vh;
     color: white;
     padding-right: 10vw;
     padding-left: 10vw;
@@ -30,7 +30,7 @@ html{
 }
 .buttons-low-2{
     position: relative;
-    top: 40px;
+    margin-top: 40px;
     display: flex;
     gap: 20px;
 }
@@ -54,7 +54,7 @@ html{
 @media screen and (max-width:1200px){
     .world-inside{
         position: relative;
-        top: 150vh;
+        margin-top: 20vh;
         color: white;
         padding-right: 5vw;
         padding-left: 5vw;
@@ -67,7 +67,7 @@ html{
 @media screen and (max-width:1000px){
     .world-inside{
         position: relative;
-        top: 150vh;
+        margin-top: 50vh;
         color: white;
         padding-right: 8vw;
         padding-left: 8vw;
@@ -93,7 +93,7 @@ html{
         font-size: 20px;
     }
     .world-inside-header{
-        font-size: 34px;
+        font-size: 65px;
         margin-bottom: 40px;
     }
     .buttons-low-2{
@@ -103,7 +103,7 @@ html{
 @media screen and (max-width:800px){
     .world-inside{
         position: relative;
-        top: 220vh;
+        margin-top: 20vh;
         color: white;
         padding-right: 7vw;
         padding-left: 7vw;
@@ -127,5 +127,9 @@ html{
     }
     .world-inside-phone-img{ 
         width: 70vw;
+    }
+    .world-inside-header{
+        font-size: 34px;
+        margin-bottom: 40px;
     }
 }
