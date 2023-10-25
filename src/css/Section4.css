@@ -1,16 +1,11 @@
 :root{
     --size: calc(1vw + 1vw);
 }
-html{
-    overflow-x:hidden;
-    background-color: #0F0A18;
-    width: 100vw;
-}
 
 .meditation-way{
     position: relative;
     color: white;
-    margin-top: 60vh;
+    margin-top: 20vh;
     padding-right: 10vw;
     padding-left: 10vw;
     width: 100vw;
@@ -176,7 +171,7 @@ html{
     .meditation-way{
         position: relative;
         color: white;
-        margin-top: 250vh;
+        margin-top: 1300px;
         padding-right: 3vw;
         padding-left: 3vw;
     }
@@ -217,5 +212,14 @@ html{
     .phone-card-way-content{
         text-align: center;
         font-size: calc(var(--size)*1.6);
+    }
+}
+@media screen and (max-width:400px){
+    .meditation-way{
+        position: relative;
+        color: white;
+        margin-top: 1100px;
+        padding-right: 3vw;
+        padding-left: 3vw;
     }
 }

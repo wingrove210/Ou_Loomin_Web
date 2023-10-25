@@ -5,7 +5,7 @@ html{
     width: 100vw;
     height: 100vh;
     position: relative;
-    margin-top: 60vh;
+    margin-top: 20vh;
     color: white;
     padding-right: 15vw;
     padding-left: 15vw;
@@ -182,7 +182,7 @@ html{
       order: 3;
       padding-right: 30px;
       padding-left: 30px;
-      height: 100vh;
+      height: 70vh;
       padding-top: 350px;
     }
     .phone-card-content, .card-content{
@@ -194,6 +194,6 @@ html{
         padding-left: 20px;
     }
     .ion-girl-header{
-        margin-top: 30px;
+        margin-top: -100px;
     }
 }
