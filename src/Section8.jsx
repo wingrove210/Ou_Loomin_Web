@@ -1,70 +1,33 @@
 import './css/Section8.css';
 import plusImage from './media/Union.png';
+import { Accordion } from './Accordion/Accordion';
 
-
+const faqList = [
+    {
+        q: "Что такое медитация?",
+        a: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minima unde eaque iste earum! Nam corrupti magni natus facere repellendus."
+    },
+    {
+        q: "Какие преимущества медитации?",
+        a: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minima unde eaque iste earum! Nam corrupti magni natus facere repellendus."
+    },
+    {
+        q: "Сколько времени рекомендуется уделять медитации для новичков?",
+        a: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minima unde eaque iste earum! Nam corrupti magni natus facere repellendus."
+    },
+    {
+        q: "Нужно ли иметь специальное оборудование или одежду для медитации?",
+        a: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minima unde eaque iste earum! Nam corrupti magni natus facere repellendus."
+    },
+    {
+        q: "Какие существуют техники медитации?",
+        a: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minima unde eaque iste earum! Nam corrupti magni natus facere repellendus."
+    },
+]
 function Section8(){
     return(
         <section className="accordion">
-            <div className='accordion-header-section'>
-                <h1 className="accordion-header">FAQ’s</h1>
-            </div>
-                <div className="accordion-block">
-                    <div className="accordion-item">
-                        <div className='accordion-text-block'>
-                            <div className='number-section'>
-                                <p className="number">01</p>
-                            </div>
-                            <p className="accordion-text">Что такое медитация?</p>
-                        </div>
-                        <div className='plus-sign-section'>
-                            <img src={plusImage} alt="" className="plus-sign"/>
-                        </div>
-                    </div>
-                    <div className="accordion-item">
-                        <div className='accordion-text-block'>
-                            <div className='number-section'>
-                                <p className="number">02</p>
-                            </div>
-                                <p className="accordion-text">Какие преимущества медитации?</p>
-                        </div>
-                        <div className='plus-sign-section'>
-                            <img src={plusImage} alt="" className="plus-sign"/>
-                        </div>
-                    </div>
-                    <div className="accordion-item">
-                        <div className='accordion-text-block'>
-                            <div className='number-section'>
-                                <p className="number">03</p>
-                            </div>
-                            <p className="accordion-text">Сколько времени рекомендуется уделять медитации для новичков?</p>
-                        </div>
-                        <div className='plus-sign-section'>
-                            <img src={plusImage} alt="" className="plus-sign"/>
-                        </div>
-                    </div>
-                    <div className="accordion-item">
-                        <div className='accordion-text-block'>
-                            <div className='number-section'>
-                                <p className="number">04</p>
-                            </div>
-                            <p className="accordion-text">Нужно ли иметь специальное оборудование или одежду для медитации?</p>
-                        </div>
-                        <div className='plus-sign-section'>
-                            <img src={plusImage} alt="" className="plus-sign"/>
-                        </div>
-                    </div>
-                    <div className="accordion-item">
-                        <div className='accordion-text-block'>
-                            <div className='number-section'>
-                                <p className="number">05</p>
-                            </div>
-                            <p className="accordion-text">Какие существуют техники медитации?</p>
-                        </div>
-                        <div className='plus-sign-section'>
-                            <img src={plusImage} alt="" className="plus-sign"/>
-                        </div>
-                    </div>
-                </div>
+            <Accordion faqList = {faqList} />
         </section>
     );
 }

@@ -1,6 +1,6 @@
 import './css/ThirdSection.css';
 import Aliana from "./media/Frame260.png";
-import Iphone3Section from './media/iPhone14Pro(1).png';
+import Iphone3Section from './media/Vmake-1700159435.jpg';
 
 function ThirdSection(){
     return(
@@ -10,7 +10,7 @@ function ThirdSection(){
         </div>
         <div className="card-block">
             <div className="card-3">
-                <h2 className="ion-girl-header">СООБЩЕСТВО ЕДИНОМЫШЛИНОВ </h2>
+                <h2 className="ion-girl-header">СООБЩЕСТВО ЕДИНОМЫШЛЕННИКОВ</h2>
                 <p className="ion-girl-content">Общайтесь с другими пользователями, делитесь своим опытом, задавайте вопросы экспертам и получайте поддержку в вашем стремлении к внутреннему спокойствию и осознанности.</p>
             </div>
             <div className="card-1">

@@ -1,6 +1,6 @@
 .accordion{
     position: relative;
-    margin-top: 30vh;
+    margin-top: 17vh;
     color: white;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -60,6 +60,18 @@
 .plus-sign-section, .number-section, .accordion-text{
     padding: 30px 40px;
 }
+.answer-item-block{
+    display: none;
+}
+.answer-item-block.open{
+    display: block;
+    border:1px solid #2A2B3A;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 @media screen and (max-width:800px){
     .accordion-header-section{
         width: 100%;
@@ -88,5 +100,13 @@
         padding-left: 5vw;
         padding-right: 5vw;
         background: #0F0A18;
+    }
+}
+@media screen and (max-width:430px){
+    .accordion-block {
+        width: 100%;
+        position: relative;
+        padding-bottom: 0px;
+        margin-top: -150px;
     }
 }

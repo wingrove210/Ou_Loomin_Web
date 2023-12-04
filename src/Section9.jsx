@@ -8,7 +8,7 @@ function Section9(){
         <div className='lower-block-section'>
             <div className="lower-block">
                 <div className='lower-section-header'>
-                    <h1>Мир внутри тебя — всего в одном клике</h1>
+                    <h1>Мир внутри тебя — всего в <br/>одном клике</h1>
                 </div>
                 <div className='abzats-lower-section'>
                     <p>Наше приложения предлагает возможность соединяться с сообществом единомышленников, обмениваться опытом, участвовать в групповых медитациях или получать поддержку от экспертов в этой области.
@@ -22,9 +22,9 @@ function Section9(){
             <footer>
                 <div className="flex-footer-section">
                     <div className='flex-text-logo'>
-                        <p class="logo-footer">OU LOOMIN</p>
+                        <p className="logo-footer">OU LOOMIN</p>
                         <div className='under-logo-section'>
-                            <p class="under-logo">Переоткрой свой внутренний мир с нами</p>
+                            <p className="under-logo">Переоткрой свой внутренний мир с нами</p>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ function Section9(){
                     <div className="buttons-lowest">
                         <p>Скачать приложение</p>
                         <ul>
-                            <button className="android"><img src={android} alt=""/>ANDROID</button>
+                            <button className="android"><img src={android} alt="" className='android-img'/>ANDROID</button>
                             <button className="apple-os"><img src={apple} alt=""/>OSX</button>
                         </ul>
                     </div>

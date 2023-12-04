@@ -1,16 +1,127 @@
+@media screen and (max-width:1600px){
+    .upper-section{
+        /* position: fixed; */
+        width: 100vw;
+        /* height: calc(var(--size)*35); */
+        height: 120vh;
+        z-index: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background: radial-gradient(
+            circle,
+            #4e21c9 3%,
+            #381f6a 20%,
+            #251741 25%,
+            #1a112c 30%,
+            #0F0A18 40%,
+            #0F0A18 50%
+          );
+          background-position-y: 420px;
+          background-repeat: no-repeat;
+    }
+}
 @media screen and (max-width: 1400px){
     .qr-code{
-        display: none;
+        margin-left: 50px;
     }
-    .scale-phone-block{
+    .upper-section{
+        /* position: fixed; */
         width: 100vw;
-        position: relative;
-        bottom: 40vh;
+        /* height: calc(var(--size)*35); */
+        height: 130vh;
+        z-index: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background: radial-gradient(
+            circle,
+            #4e21c9 3%,
+            #381f6a 20%,
+            #251741 25%,
+            #1a112c 30%,
+            #0F0A18 40%,
+            #0F0A18 50%
+          );
+          background-position-y: 420px;
+          background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 1300px){
+    .upper-section{
+        /* position: fixed; */
+        width: 100vw;
+        /* height: calc(var(--size)*35); */
+        height: 100vh;
+        z-index: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background: radial-gradient(
+            circle,
+            #4e21c9 3%,
+            #381f6a 20%,
+            #251741 25%,
+            #1a112c 30%,
+            #0F0A18 40%,
+            #0F0A18 50%
+          );
+          background-position-y: 420px;
+          background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 1100px){
+    .costs{
+        width: 65vw;
     }
 }
 @media screen and (max-width: 1000px){
        .wave-text{
             display: none;
+        }
+        .qr-code-block{
+            display: none;
+        }
+        .scale-phone{
+            position: relative;
+            margin-top: -400px;
+        }
+        .gulls{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            bottom: 95vh;
+            z-index: -2;
+            margin-bottom: 120px;
+            z-index: 10;
+        }
+        .gulls-img{
+            width: calc(var(--size)*65);
+            height: 450px;
+        }
+        .header-text{
+            font-size: calc(var(--size)*3);
+            font-family: 'Open Sans';
+        }
+        .under-header{
+            display: flex;
+            font-size: calc(var(--size)*1.2);
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            /* padding-left: 90px;
+            padding-right: 90px; */
+            color: #77798F;    
+        }
+        .over-header{
+            font-family: 'Rubik One', sans-serif;
+          font-size: calc(var(--size)*0.9);
+          text-transform: uppercase;
+          background: linear-gradient(45deg, #627FFF 33%, #865BFF 66%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: #0B2349;
+          display: table;
+          margin: 20px auto;
+          letter-spacing: 4px;
+          font-weight: 700;
         }
 }
 @media screen and (max-width: 800px){
@@ -24,6 +135,124 @@
     }
     .costs ul{
         display: none;
-
+        width: 30px;
+        float: right;
+    }
+    .costs{
+        width: 30px;
+    }
+    .try-btn{
+        font-size: calc(var(--size)*1.1);
+        padding:calc(var(--size)*1.5)  calc(var(--size)*2.5);
+    }
+    .watch-video{
+        font-size: calc(var(--size)*1.1);
+        padding:calc(var(--size)*1.5)  calc(var(--size)*2.5);
+        z-index: 20;
+    }
+    .try-btn{
+        color: rgba(var(--text-color));
+        border: 2px double transparent;
+        background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left, rgb(1, 110, 218));
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        transition: all 0.3s ease;
+        z-index: 20;
+    }
+    .polygon{
+        margin-right: 12px;
+        width: calc(var(--size)*1.1);
+    }
+    .scale-phone{
+        position: relative;
+        margin-top: 200px;
+        width: calc(var(--size)*30);
+        box-shadow: -1px -16px 300px 20px #4e21c9;
+        background: transparent;
+        border-radius: calc(var(--size)*5);
+    }
+    .img-lines-block{
+        text-align: center;
+        position: relative;
+        z-index: -1;
+        margin-top: -200px;
+        width: 100%;
+        height: 5vh;
+        z-index: 10;
+    }
+    .upper-section{
+        /* position: fixed; */
+        width: 100vw;
+        height: 190vh;
+        z-index: 1;
+        overflow-x: hidden;
+    }
+    .lines-img{
+        display: none;
+    }
+    .gulls{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 95vh;
+        z-index: -2;
+        margin-bottom: 120px;
+        background-image: url('./media/lines2.png');
+        background-size: 500px;
+        z-index: 10;
+    }
+    .upper-section{
+        /* position: fixed; */
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .start{
+        position: relative;
+        margin-right: 8px;
+        top: 5px;
+        align-self: end;
+        width: calc(var(--size)*2);
     }
 }
+@media screen and (max-width: 600px) {
+    .over-header{
+        font-size: calc(var(--size)*1.1);
+    }
+    .under-header{
+        font-size: calc(var(--size)*1.3);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header-text{
+        font-size: calc(var(--size)*4);
+        font-family: 'Open Sans';
+    }
+}
+@media screen and (max-width: 450px) {
+    .scale-phone{
+        position: relative;
+        margin-top: calc(var(--size)*17);
+        width: calc(var(--size)*25);
+    }
+    .main-text{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .scale-phone{
+        position: relative;
+        margin-top: 0;
+        width: calc(var(--size)*25);
+    }
+}
+@media screen and (max-height: 812px) {
+    .scale-phone{
+        position: relative;
+        margin-top: 20px;
+        width: calc(var(--size)*30);
+    }
+}
+

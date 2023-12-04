@@ -6,8 +6,8 @@
     position: relative;
     color: white;
     margin-top: 20vh;
-    padding-right: 10vw;
-    padding-left: 10vw;
+    padding-right: calc(var(--size)*2);
+    padding-left: calc(var(--size)*4.8);
     width: 100vw;
     background: radial-gradient(
         circle,
@@ -18,11 +18,12 @@
         #0F0A18 35%,
         #0F0A18 40%
       );
+    height: calc(var(--size)*20);
 }
 .way-header{
-    font-size: 50px;
-    width: 370px;
-    font-family: 'Open Sans';
+    font-size: calc(var(--size)*1.8);
+    /* width: 370px; */
+    font-family: 'Open Sans Bold';
     color: transparent;    
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -30,7 +31,7 @@
 }
 .meditation-grid{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: calc(var(--size)*19.4) calc(var(--size)*19.4);
     column-gap: 50px;
     row-gap: 50px;
     margin-top: -200px;
@@ -76,15 +77,12 @@
     font-family: 'Kontora';
 }
 .way-calendar{
-    display: flex;
-    background-color: black;
-    height: 362px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 30px;
-    padding-left: 30px;
-    background: radial-gradient(at 100% 90%, #6F3CF6 10%,#4b338e 20%,#36285e 30%,#1f1831 40%, #000 80%);
-    height: 90%;
+    /* display: flex; */
+    /* background-color: black; */
+    /* height: 362px; */
+    /* padding: 17px 40px; */
+    /* background: radial-gradient(at 100% 90%, #6F3CF6 10%,#4b338e 20%,#36285e 30%,#1f1831 40%, #000 80%); */
+    /* height: 90%; */
     
 
 }
@@ -96,11 +94,15 @@
     position: relative;
 }
 .calendar-img{
+    /* height: calc(var(--size)*5.1);
+    width: calc(var(--size)*5.3); */
     height: 200px;
     width: 200px;
 }
 .acrivity-img{
     position: relative;
+    padding-bottom: calc(var(--size));
+    width: calc(var(--size)*8.5);
 }
 .calender-card-abzats{
     font-size: calc(var(--size)*0.5);
@@ -116,7 +118,7 @@
 }
 .calender-card-header{
     margin-bottom: 20px;
-    font-size: 27px;
+    font-size: calc(var(--size)*2);
     width: 200px;
     font-family: 'Open Sans';
     color: transparent;    
@@ -125,101 +127,215 @@
 	background-image: linear-gradient(to bottom, white, #7037EB);
 }
 .way-content{
-    width: 90%;
+    width: 100%;
     padding-left: 5vw;
     font-family: 'Open Sans';
+    font-size: calc(var(--size)*0.5);
+    margin-top: calc(var(--size)*3);
 }
-@media screen and (max-width:1200px) {
-    .meditation-way{
-        position: relative;
-        color: white;
-        margin-top: 60vh;
-        padding-right: 5vw;
-        padding-left: 5vw;
-    }
-    .acrivity-img{
-        position: relative;
-        margin-bottom: 0px;
-        width: 200px;
-    }
+.tracker{
+    width: calc(var(--size)*20);
 }
-@media screen and (max-width:1000px) {
-    .meditation-way{
-        position: relative;
-        color: white;
-        margin-top: 80vh;
-        padding-right: 5vw;
-        padding-left: 5vw;
-    }
-    .meditation-grid{
-       display: flex;
-       flex-direction: column;
-    }
-    .calender-card-abzats{
-        font-size: calc(var(--size)*1.2);
-    }
-    .phone-card-way-content{
-        text-align: center;
-        font-size: calc(var(--size)*1.2);
+.personal{
+    width: calc(var(--size)*19.4);
+}
+@media screen and (max-width:1400px){
+    .way-header{
+        font-size: calc(var(--size)*2.3);
+        width: 570px;
+        font-family: 'Open Sans Bold';
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, white, #7037EB);
     }
     .way-content{
-        width: 90%;
+        width: 100%;
+        padding-left: 5vw;
+        font-family: 'Open Sans';
+        font-size: calc(var(--size)*0.7);
+        margin-top: calc(var(--size)*3);
+    }
+    .tracker{
+        width: calc(var(--size)*23);
+    }
+    .personal{
+        width: calc(var(--size)*22.4);
+    }
+    .meditation-way{
+        position: relative;
+        color: white;
+        margin-top: 20vh;
+        padding-right: calc(var(--size));
+        padding-left: calc(var(--size)*1.3);
+        width: 100vw;
+        background: radial-gradient(
+            circle,
+            #4e21c9 3%,
+            #381f6a 10%,
+            #251741 15%,
+            #1a112c 20%,
+            #0F0A18 35%,
+            #0F0A18 40%
+          );
+        height:calc(var(--size)*25);
+    }
+    .meditation-grid{
+        display: grid;
+        grid-template-columns: calc(var(--size)*22.4) calc(var(--size)*22.4);
+        column-gap: 50px;
+        row-gap: 50px;
+        margin-top: -29px;
+        position: relative;
+    }
+}
+@media screen and (max-width:1300px){
+    .meditation-way{
+        position: relative;
+        color: white;
+        margin-top: 0vh;
+        padding-right: calc(var(--size));
+        padding-left: calc(var(--size)*1.3);
+        width: 100vw;
+        background: radial-gradient(
+            circle,
+            #4e21c9 3%,
+            #381f6a 10%,
+            #251741 15%,
+            #1a112c 20%,
+            #0F0A18 35%,
+            #0F0A18 40%
+          );
+        height:calc(var(--size)*25);
+    }
+}
+@media screen and (max-width:1100px){
+    .meditation-way{
+        position: relative;
+        color: white;
+        /* margin-top: 55vh; */
+        padding-right: calc(var(--size));
+        padding-left: calc(var(--size)*1.3);
+        width: 100vw;
+        background: radial-gradient(
+            circle,
+            #4e21c9 3%,
+            #381f6a 10%,
+            #251741 15%,
+            #1a112c 20%,
+            #0F0A18 35%,
+            #0F0A18 40%
+          );
+        height:calc(var(--size)*25);
+    }
+}
+@media screen and (max-width:800px){
+    .tracker{
+        width: calc(var(--size)*45);
+        z-index: 10;
+        position: relative;
+    }
+    .personal{
+        width: calc(var(--size)*45.4);
+    }
+    .meditation-way{
+        position: relative;
+        color: white;
+        margin-top: 10vh;
+        padding-right: calc(var(--size));
+        padding-left: calc(var(--size)*2.2);
+        width: 100vw;
+        background: radial-gradient(
+            circle,
+            #4e21c9 3%,
+            #381f6a 10%,
+            #251741 15%,
+            #1a112c 20%,
+            #0F0A18 35%,
+            #0F0A18 40%
+          );
+        height: 80vh;
+        background-size: 800px;
+        background-position: 600px 750px;
+    }
+    .meditation-grid{
+        display: grid;
+        grid-template-columns: calc(var(--size)*30.4);
+        column-gap: 50px;
+        row-gap: 30px;
+        margin-top: 10vh;
+        position: relative;
+    }
+    .way-header{
+        font-size: calc(var(--size)*4);
+        width: calc(var(--size)*40);
+        font-family: 'Open Sans Bold';
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, white, #7037EB);
+    }
+    .way-content{
+        width: calc(var(--size)*45);
         padding-left: 0px;
+        font-family: 'Open Sans';
+        font-size: calc(var(--size)*1.5);
+        margin-top: 10px;
     }
 }
-@media screen and (max-width:800px) {
-    .meditation-way{
+@media screen and (max-width:430px){
+    .way-header{
+        font-size: calc(var(--size)*4);
+        width: 370px;
+        font-family: 'Open Sans Bold';
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, white, #7037EB);
+        top: 26px;
         position: relative;
-        color: white;
-        margin-top: 1300px;
-        padding-right: 3vw;
-        padding-left: 3vw;
     }
-    .phone-card-header{
-        font-size: 15px;
-        width: 180px;
-        text-align: center;
+    .way-content{
+        width: calc(var(--size)*40);
+        padding-left: 0px;
+        font-family: 'Open Sans';
+        font-size: calc(var(--size)*1.5);
+        margin-top: 10px;
     }
-    .phone-card-block{
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-        background-color: black;
-    }
-    .calendar-acrivity{
-        display: flex;
-        flex-direction: column;
-        height: 85%;
+    .meditation-grid{
+        display: grid;
+        grid-template-columns: calc(var(--size)*30.4);
+        column-gap: 50px;
+        row-gap: 20px;
+        margin-top: 0vh;
         position: relative;
-        margin-bottom: 0px;
-    }
-    .calender-card-abzats{
-        font-size: 13px;
-    }
-    .phone-card-way-content{
-        text-align: center;
-        font-size: 13px;
-    }
-    .way-calendar{
-        zoom: 65%;
-    }
-    .way-phone-card{
-        zoom: 65%;
-    }
-    .calender-card-abzats{
-        font-size: calc(var(--size)*1.6);
-    }
-    .phone-card-way-content{
-        text-align: center;
-        font-size: calc(var(--size)*1.6);
     }
 }
-@media screen and (max-width:400px){
-    .meditation-way{
+@media screen and (max-width:390px){
+    .way-header{
+        font-size: calc(var(--size)*4);
+        width: 370px;
+        font-family: 'Open Sans Bold';
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, white, #7037EB);
+        top: 26px;
         position: relative;
-        color: white;
-        margin-top: 1100px;
-        padding-right: 3vw;
-        padding-left: 3vw;
+    }
+    .way-content{
+        width: calc(var(--size)*40);
+        padding-left: 0px;
+        font-family: 'Open Sans';
+        font-size: calc(var(--size)*1.5);
+        margin-top: 10px;
+    }
+    .meditation-grid{
+        display: grid;
+        grid-template-columns: calc(var(--size)*30.4);
+        column-gap: 50px;
+        row-gap: 20px;
+        margin-top: 10vh;
+        position: relative;
     }
 }

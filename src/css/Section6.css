@@ -1,85 +1,284 @@
+:root {
+    --size: calc(1vw + 1vw);
+}
 .open-world{
     position: relative;
-    margin-top: 180vh;
+    margin-top: 20vh;
     color: white;
-    min-width: 1650px;
+    overflow-x: hidden;
+    background: radial-gradient(
+        ellipse,
+        #4e21c9 1%,
+        #381f6a 10%,
+        #251741 20%,
+        #1a112c 30%,
+        #0F0A18 45%,
+        #0F0A18 50%
+
+      );
+      background-position-y: 200px;
+      background-position-x: calc(var(--size)*(-25));
+      background-repeat: no-repeat;
+      background-size: calc(var(--size)*100) calc(var(--size)*25);
+}
+.open-images{
+    height: calc(var(--size)*25);
+    overflow: hidden;
 }
 .world-header-section{
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
 }
 .open-world-header{
-    font-size: 76px;
+    font-size: calc(var(--size)*2);
     width: 50%;
     text-align: center;
+    font-family: 'Open Sans';
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to bottom, white, #7037EB);
+    display: table;
 }
 .flex-cards-top{
     display: flex;
-    gap: 1520px;
-    width: 1920px;
-    overflow-x: hidden;
-    align-items: stretch;
-    flex-wrap: nowrap;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 .meditation-lower-block{
-    background-image: url('../media/Rectangle28(3).png');
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 30px  0px 0px 50px;
+}
+.meditation-lower-block h1{
+    font-size: 20px;
+}
+.activity-lower{
+    height: 200px;
+    align-self: center;
+}
+.for-img{
+    display: flex;
+    padding-left: 10px;
+    gap: 10px;
+    align-items: center;
+}
+.aliana-sec6{
+    margin-bottom: 40px;
+}
+.meditation-image{
+    width: calc(var(--size)*5);
+}
+.activity-lower{
+    width:calc(var(--size)*8);
+    height:calc(var(--size)*6) ;
 }
 .flex-middle-section{
     display: flex;
-    width: 1920px;
-    padding-right: 15vw;
+    width: 100vw;
+    padding-right: 10vw;
     padding-left: 15vw;
-    justify-content: space-between;
-    /* bottom: 5vw; */
+    justify-content: center;
+    gap: calc(var(--size)*18);
+    bottom: calc(var(--size)*5);
     position: relative;
+    align-items: center;
 }
 .astrologist{
-    background-image: url('../media/Rectangle28(2).png');
     background-size: cover;
     background-repeat: no-repeat;
+    align-content: center;
+}
+.astrologist-image{
+    width: calc(var(--size)*8);
 }
 .flex-bottom-section{
     display: flex;
     justify-content: space-between;
-    padding-right: 5vw;
+    position: relative;
     padding-left: 5vw;
+    padding-right: 5vw;
+    bottom: calc(var(--size)*10);
 }
 .individual-training{
-    background-image: url('../media/Rectangle26.png');
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     width: 25%;
 }
+.yoga-image{
+    width: calc(var(--size)*10);
+}
+.layout-image{
+    width: calc(var(--size)*10)
+}
 .phone-image-bottom{
-    width: 100vw;
     text-align: center;
+    align-self: end;
 }
 .phone-image-bottom img{
-    width: 28vw;
-    bottom: 100vh;
+    width: calc(var(--size)*10);
+    bottom: calc(var(--size)*5);
     position: relative;
 }
 .astrologist{
-    padding-left: 50px;
-    padding-right: 90px;
-    border-radius: 42px;
-    padding-top: 30px;
+    width: calc(var(--size)*5);
 }
 .astrologist h2{
     font-size: 34px;
 }
+.calendar-lower{
+    width: calc(var(--size)*10);
+    height: calc(var(--size)*10);
+    align-self: center;
+}
 .individual-training{
-    padding-top: 200px;
-    padding-right: 70px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding-top: calc(var(--size)*5);
+    padding-right: calc(var(--size)*2);
+    padding-left: calc(var(--size));
+    padding-bottom: calc(var(--size));
     border-radius: 30px;
 }
 .individual-training h2{
+    font-size: calc(var(--size)*0.7);
     margin-bottom: 40px;
+    text-shadow: 1px 1px black;
 }
+.individual-training button{
+    padding: 10px 40px;
+    background: transparent;
+    border-radius: 19px;
+    border: 2px white solid;
+    color: white;
+    font-weight: 700;
+}
+.button-sign{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.layout-today{
+    align-self: center;
+}
+.layout-content{
+    padding-bottom: 100px;
+}
+.activity-lower-2{
+    display: none;
+}
+@media screen and (max-width:800px){
+    .flex-cards-top{
+        display: none;
+    }
+    .flex-middle-section{
+        display: flex;
+        justify-content: center;
+        gap: calc(var(--size)*18);
+        top: calc(var(--size));
+        position: relative;
+        align-items: center;
+        width: calc(var(--size)*30);
+    }
+    .flex-bottom-section{
+        display: flex;
+        justify-content: center;
+        gap: calc(var(--size));
+        bottom: calc(var(--size)*5);
+        position: relative;
+        align-items: center;
+        width: calc(var(--size)*45);
+    }
+    .yoga-image{
+        width: calc(var(--size)*20);
+    }
+    .layout-image{
+        width: calc(var(--size)*20);
+        display: none;
+    }
+    .activity-lower-2{
+        display: block;
+        width: calc(var(--size)*16);
+        height: calc(var(--size)*17);
+    }
+    .phone-image-bottom img{
+        width: calc(var(--size)*22);
+        bottom: calc(var(--size)*5);
+        position: relative;
+        margin-left: calc(var(--size)*11);
+    }
+    .astrologist-image{
+        width: calc(var(--size)*22);
+    }
+    .calendar-lower{
+        width: calc(var(--size)*25);
+        height: calc(var(--size)*25);
+        align-self: center;
+    }
+    .open-images{
+        height: 70vh;
+        /* overflow: hidden; */
+    }
+    .astrologist{
+        order: 2;
+    }
+    .open-world-header{
+        font-size: calc(var(--size)*3);
+        width: 80%;
+        text-align: center;
+        font-family: 'Open Sans';
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, white, #7037EB);
+        display: table;
+        margin-bottom: 30px;
+    }
+    .open-world{
+        position: relative;
+        margin-top: 20vh;
+        color: white;
+        overflow-x: hidden;
+        background: #0F0A18;
+    }
+}
+@media screen and (max-width:430px){
+    .open-world {
+        position: relative;
+        margin-top: 10vh;
+        color: white;
+        overflow-x: hidden;
+    }
+    .open-world-header {
+        font-size: 30px;
+        width: 90%;
+        text-align: center;
+        font-family: 'Open Sans';
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, white, #7037EB);
+        display: table;
+    }
+    .open-images {
+        height: 65vh;
+        /* overflow: hidden; */
+    }
+}
+/* @media screen and (max-height: 1200px){
+    .open-images{
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+@media screen and (max-height: 1080px){
+    .open-images{
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+@media screen and (max-height: 1000px){
+    .open-images{
+        height: 50vh;
+        overflow: hidden;
+    }
+} */

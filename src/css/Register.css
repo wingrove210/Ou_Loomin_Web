@@ -1,0 +1,121 @@
+.upper-section-2{
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(
+        circle,
+        #4e21c9 3%,
+        #381f6a 20%,
+        #251741 25%,
+        #1a112c 30%,
+        #0F0A18 40%,
+        #0F0A18 50%
+        );
+        background-position-y: 420px;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow-y: hidden;
+}
+.register-section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.register-block{
+    background-color: rgba(199, 158, 255, 10%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 40px 50px;
+    margin-bottom: 200px;
+}
+.register-header{
+    font-size: 35px;
+    font-family: 'AVA';
+    letter-spacing: 5px;
+    text-shadow:
+    0 0 7px #7037EB,
+    0 0 20px #7037EB,
+    0 0 120px #7037EB;
+    color: #D3C2F8;
+    font-weight: 500;
+}
+.register-login, .register-password{
+    font-size: 25px;
+    padding: 5px 20px;
+    background-color: rgba(153, 91, 239, 5%);
+    border: 1px #FFF9F9 solid;
+    border-radius: 10px;
+    width: 100%;
+    z-index: 100;
+    font-family: 'AVA';
+    color: white;
+}
+.register-password{
+    margin-bottom: 50px;
+}
+.buttons-low-reg{
+    display: flex;
+    gap: 40px;
+}
+.try-btn-reg{
+    padding: 10px 30px;
+    border-radius: 41px;
+    background-color: #010314;
+    color: white;
+    border: 2px #4467FF solid;
+    background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left, rgb(1, 110, 218));
+    display: flex;
+    align-items: center;
+    transition: all 1s ease;
+    z-index: 20;
+    cursor: pointer;
+}
+.try-btn-reg:hover{
+    box-shadow: 1px 1px 19px 1px #7037EB;
+}
+.watch-video-reg{
+    padding: 10px 30px;
+    border-radius: 41px;
+    background-color: #010314;
+    color: white;
+    border: none;
+    background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left, rgb(1, 110, 218));
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 20;
+}
+.gulls-img-2{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0vh;
+    z-index: -2;
+    transform: scale(0.7);
+    z-index: 10;
+    height: 800px;
+}
+.gulls-2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    bottom: 102vh;
+    z-index: -2;
+    transform: scale(0.7);
+    z-index: 10;
+}
+.img-lines-block-2{
+    position: relative;
+    bottom: 130vh;
+}
+.lines-img-2{
+    margin-left: 300px;
+}

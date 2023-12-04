@@ -3,7 +3,6 @@ import phone5sec from './media/iPhone14Pro.png';
 import triangle_play from './media/Polygon.svg';
 
 
-
 function Section5(){
     return(
         <section className="world-inside">
@@ -13,7 +12,7 @@ function Section5(){
             </div>
             <div className='world-inside-section'>
                 <div className="world-inside-text">
-                    <h1 className="world-inside-header">Мир внутри тебя — всего в одном клике.</h1>
+                    <h1 className="world-inside-header">Мир внутри тебя <br/>всего в одном клике</h1>
                     <p className="world-inside-content">Наше приложение – это идеальный спутник для тех, кто стремится к внутреннему спокойствию и балансу. С помощью простых, но эффективных медитаций, вы научитесь находить умиротворение в любой ситуации </p>
                 </div>
                 <div className="buttons-low-2">
