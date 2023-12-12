@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 @font-face {
   font-family: 'Neue Monteral';
   src: url('./fonts/Neue-Montreal/NeueMontreal-Regular.woff');

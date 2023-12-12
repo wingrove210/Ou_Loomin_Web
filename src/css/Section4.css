@@ -1,5 +1,5 @@
 :root{
-    --size: calc(1vw + 1vw);
+    --size: calc(1vh + 1vw);
 }
 
 .meditation-way{
@@ -304,17 +304,21 @@
     }
     .meditation-grid{
         display: grid;
-        grid-template-columns: calc(var(--size)*30.4);
+        grid-template-columns: calc(var(--size)*50.4);
         column-gap: 50px;
         row-gap: 20px;
         margin-top: 0vh;
         position: relative;
+        overflow-x:hidden ;
     }
+    /* .way-phone-card{
+        width: 90vw;
+    } */
 }
 @media screen and (max-width:390px){
     .way-header{
         font-size: calc(var(--size)*4);
-        width: 370px;
+        width: 290px;
         font-family: 'Open Sans Bold';
         color: transparent;    
         -webkit-background-clip: text;
@@ -332,10 +336,11 @@
     }
     .meditation-grid{
         display: grid;
-        grid-template-columns: calc(var(--size)*30.4);
+        grid-template-columns: calc(var(--size)*50.4);
         column-gap: 50px;
         row-gap: 20px;
         margin-top: 10vh;
         position: relative;
+        overflow-x:hidden ;
     }
 }

@@ -165,7 +165,7 @@
     }
     .scale-phone{
         position: relative;
-        margin-top: 200px;
+        margin-top: 0px;
         width: calc(var(--size)*30);
         box-shadow: -1px -16px 300px 20px #4e21c9;
         background: transparent;
@@ -212,9 +212,21 @@
     .start{
         position: relative;
         margin-right: 8px;
-        top: 5px;
-        align-self: end;
         width: calc(var(--size)*2);
+    }
+    .over-header{
+        font-family: 'Rubik One', sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        background: linear-gradient(45deg, #627FFF 33%, #865BFF 66%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #0B2349;
+        display: table;
+        margin: 20px auto;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
     }
 }
 @media screen and (max-width: 600px) {
@@ -234,11 +246,14 @@
 @media screen and (max-width: 450px) {
     .scale-phone{
         position: relative;
-        margin-top: calc(var(--size)*17);
-        width: calc(var(--size)*25);
+        margin-top: calc(var(--size)*7);
+        width: calc(var(--size)*35);
     }
     .main-text{
         margin-top: 30px;
+    }
+    .try-btn{
+        font-size: calc(var(--size)*0.4);
     }
 }
 @media screen and (max-width: 375px) {
@@ -247,12 +262,17 @@
         margin-top: 0;
         width: calc(var(--size)*25);
     }
+    .try-btn{
+        font-size: calc(var(--size)*0.3);
+        text-align: left;
+    }
 }
 @media screen and (max-height: 812px) {
     .scale-phone{
         position: relative;
-        margin-top: 20px;
-        width: calc(var(--size)*30);
+        margin-top: 40px;
+        width: calc(var(--size)*25);
     }
 }
+
 

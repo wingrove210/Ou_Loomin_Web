@@ -62,6 +62,11 @@ html{
     background-color: #050308;
     padding: 40px;
 }
+.photo-rounded-block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .card-2{
     padding-bottom: 0px;
 }
@@ -77,8 +82,8 @@ html{
     background-repeat: no-repeat;
     padding-right: 30px;
     padding-left: 30px;
-    padding-top: 550px; 
-    /* filter: blur(10px); */
+    padding-top: 600px; 
+    padding-bottom: 20px;
 }
 .card-content{
     font-family: 'Kontora';
@@ -86,7 +91,8 @@ html{
 .ion-girl-header{
     margin-bottom: 10px;
     font-family: 'Open Sans';
-    backdrop-filter: blur(20px);
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
 }
 .person-name{
     font-family: 'Montserrat';
@@ -112,7 +118,10 @@ html{
     line-height: 20px;
     font-family: 'Open Sans';
     font-size: 17px;
-    backdrop-filter: blur(20px);
+    border-radius: 0 0 20px 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
 }
 .photo-rounded{
         border-radius: 50%;
@@ -120,6 +129,10 @@ html{
         -webkit-box-shadow: 2px 2px 5px 0px rgb(255, 255, 255);
         -moz-box-shadow: 2px 2px 5px 0px rgba(255, 255, 255, 1);
         box-shadow: 0px 0px 30px 3px rgb(107, 66, 136);
+}
+.card-3-text{
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
 }
 @media  screen and (max-width:1400px) {
     .third-section{
@@ -173,6 +186,7 @@ html{
       padding-left: 30px;
       height: 100vh;
       padding-top: 900px;
+      padding-bottom: 120px;
     }
     .phone-card-content, .card-content{
          font-size: 16px;
@@ -199,7 +213,8 @@ html{
       padding-right: 30px;
       padding-left: 30px;
       height: calc(var(--size)*75);
-      padding-top: calc(var(--size)*65);
+      padding-top: calc(var(--size)*55);
+      padding-bottom: 130px;
     }
     .phone-card-content, .card-content{
          font-size: 12px;

@@ -3,6 +3,7 @@ import './index.css';
 import './media.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollMagic from 'scrollmagic';
 
 // import menu from './media/menu.png'
 import scalePhone from './media/scale_phone.png'
@@ -22,36 +23,29 @@ import Section9 from './Section9';
 import SecondSection from './SecondSection';
 import ThirdSection from './ThirdSection';
 // import {Link} from 'react-router-dom';
-import { useEffect } from "react";
+import { useEffect, useRef} from "react";
 import $ from 'jquery'
+gsap.registerPlugin(ScrollTrigger);
 function App() {
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger)
-        gsap.to('.scale-phone', {
-            scrollTrigger: {
-              trigger: '.scale-phone',
-              start: 'top center', // начать анимацию, когда верхнее центральное положение контейнера достигнуто верхним краем окна просмотра
-              end: 'bottom center', // закончить анимацию, когда нижнее центральное положение контейнера достигнуто нижним краем окна просмотра
-              scrub: true, // делаем анимацию "приклеенной" к скроллу
-              markers: true,
-            }, 
-            scale: 5.3,// масштабировать телефон в 2 раза
+//     useEffect(()=>{
+//         gsap.to(".scale-phone", {
 
-            ease: 'power1.out', // тип анимации
-            // я щас перезвоню как разберусь с телефоном. 
-          });
-          $(window).on('scroll', () => {
-            if (document.querySelector('.scale-phone').style.position === 'fixed'){
-                $('.scale-phone').addClass("telefon")
-            } else{
-                $('.scale-phone').removeClass("telefon")
-            }
-          })
-    })
-
+//             scale: 3,
+//             y: 400,
+//             rotation: 0,
+//             scrollTrigger: {
+//             trigger: ".scale-phone",
+//             start: "top center",
+//             end: "top bottom",
+//             scrub: true,
+//             markers: true,
+//             id: "scrub",
+//             pin: true
+            
+// }})})
     return (
         <>
-            <section className="upper-section">
+            <section className="upper-section" id='main'>
                 <Header />
                 <div className="main-text">
                     <div className="main-text__block">
@@ -70,7 +64,9 @@ function App() {
                     <img src={gulls} alt="" className="gulls-img" />
                 </div>
                 <div className="img-lines-block">
-                    <img alt="" src={lines} className="lines-img" />
+                    <div className='img-lines-section'>
+                        <img alt="" src={lines} className="lines-img" />
+                    </div>
                     <p className="wave-text">СПУСКАЙСЯ НИЖЕ</p>
                     <div className="qr-code">
                         <div className='qr-code-block'>
@@ -81,10 +77,11 @@ function App() {
                             <img src={qrcode} alt="" className="qr-code-img" />
                         </div>
                     </div>
-                    <div className="scale-phone-block">
-                        <img src={scalePhone} alt="" className="scale-phone" />
-                    </div>
                 </div>
+                <div className="scale-phone-block">
+                        <img src={scalePhone} alt="" className="scale-phone" />
+                </div>
+
             </section>
             <SecondSection />
             <ThirdSection />

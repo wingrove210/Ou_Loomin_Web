@@ -1,5 +1,7 @@
 import './css/SecondSection.css'
-import phone_girl from './media/00008-477784597.png';
+import phone_girl from './media/Vmake-1702165167.png'
+// import phone_girl from './media/IMG_1248.png'
+// import phone_girl from './media/Vmake-1702164426.jpg'
 
 function SecondSection(){
     return (

@@ -32,25 +32,25 @@ function Section9(){
                     <div className="prices">
                         <p>Цены и предложения</p>
                         <ul>
-                            <li>Тарифный План</li>
-                            <li>Акции и предложения</li>
-                            <li>Условия для партнеров </li>
+                            <li><a href="#costs">Тарифный План</a></li>
+                            <li><a href="#main">Акции и предложения</a></li>
+                            <li><a href="#main">Условия для партнеров</a></li>
                         </ul>
                     </div>
                     <div className="about-company">
                         <p>О Компании </p>
                         <ul>
-                            <li>Наш блок</li>
-                            <li>Вакансии</li>
-                            <li>Новости</li>
+                            <li><a href="#main">Наш блок</a></li>
+                            <li><a href="#main">Вакансии</a></li>
+                            <li><a href="#main">Новости</a></li>
                         </ul>
                     </div>
                     <div className="documents">
                         <p>Документы</p>
                         <ul>
-                            <li>Лицензия</li>
-                            <li>ООО</li>
-                            <li>Контактные данные</li>
+                            <li><a href="#main">Лицензия</a></li>
+                            <li><a href="#main">ООО</a></li>
+                            <li><a href="#main">Контактные данные</a></li>
                         </ul>
                     </div>
                     <div className="buttons-lowest">
@@ -64,7 +64,7 @@ function Section9(){
             </footer>
         </div>
         <div className="under-footer">
-                <p className="under-left">© 2024 OU GODS. Все права за нами и нам похуй.</p>
+                <p className="under-left">© 2024 OU GODS. Все права защищены</p>
                 <ul className="under-right">
                     <li>Условия использования</li>
                     <li>Политика Конфиденциальности</li>

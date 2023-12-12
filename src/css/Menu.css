@@ -35,3 +35,13 @@
     margin-left: 85%;
     margin-top: 20px;
 }
+@media screen and (max-height: 780px){
+    .header-btns{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;
+        margin-top: 40%;
+    }
+}

@@ -11,9 +11,9 @@ function Header(){
                 <h3 className="logo">OU LOOMIN</h3>
                 <div className="costs">
                     <ul>
-                        <p className="costs-item">О приложении</p>
-                        <p className="costs-item">Тарифы</p>
-                        <p className="costs-item">О нас</p>
+                        <a className="costs-item" href='#about'>О приложении</a>
+                        <a className="costs-item" href='#costs'>Тарифы</a>
+                        <a className="costs-item" href='#faq'>FAQ</a>
                         <div className="header-buttons">
                             <a href='/register' style={{textDecoration: "none", paddingTop: "10px"}} className="registration">Регистрация</a>
                             <div className="btn-login">

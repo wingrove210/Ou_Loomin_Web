@@ -6,13 +6,20 @@
 html{
     overflow-x:hidden;
 }
+.group{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: blueviolet; */
+}
 .world-inside{
     position: relative;
-    margin-top: 12vh;
+    /* margin-top: 12vh; */
     color: white;
     padding-right: 10vw;
     padding-left: 10vw;
     width: 100vw;
+    height: 100vh;
     background: radial-gradient(
         ellipse,
         #4e21c9 1%,
@@ -23,6 +30,8 @@ html{
         #0F0A18 70%
 
       );
+    display: flex;
+    align-items: center;
 }
 .world-inside-block{
     display: flex;
@@ -61,10 +70,6 @@ html{
         padding-right: 5vw;
         padding-left: 5vw;
     }
-    /* .try-btn, .watch-video{
-        padding : 12px 30px;
-        font-size: 14px;
-    } */
 }
 @media screen and (max-width:1000px){
     .world-inside{
@@ -96,11 +101,6 @@ html{
         font-family: 'Open Sans';
         width: calc(var(--size)*45);
     }
-    /* .world-inside-content{
-        font-size: calc(var(--size)*0.6);
-        font-family: 'Open Sans';
-        width: calc(var(--size)*25);
-    } */
     .world-inside-header{
         font-size: 65px;
         margin-bottom: 40px;
@@ -176,14 +176,14 @@ html{
 @media screen and (max-width:430px){
     .world-inside{
         position: relative;
-        margin-top: 10vh;
+        margin-top: 15vh;
         color: white;
         padding-right: 7vw;
         padding-left: 7vw;
     }
     .world-inside{
         position: relative;
-        margin-top: -1vh;
+        margin-top: 4vh;
         color: white;
         padding-right: 10vw;
         padding-left: 10vw;
@@ -198,6 +198,7 @@ html{
             #0F0A18 70%
     
           );
+        height: 90vh;
     }
     .world-inside-block{
         display: flex;
@@ -215,14 +216,8 @@ html{
         margin-top: 60px;
     }
 }
-/* @media screen and(max-width:430px){
-    .world-inside {
-        position: relative;
-        margin-top: 0vh;
-        color: white;
-        padding-right: 10vw;
-        padding-left: 10vw;
-        width: 100vw;
-        background: radial-gradient( ellipse, #4e21c9 1%, #381f6a 15%, #251741 25%, #1a112c 40%, #0F0A18 65%, #0F0A18 70% );
+@media screen and (max-height: 780px){
+    .world-inside{
+        margin-top: 20vh;
     }
-} */
+}

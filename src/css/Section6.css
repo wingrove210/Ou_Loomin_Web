@@ -23,7 +23,7 @@
 }
 .open-images{
     height: calc(var(--size)*25);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .world-header-section{
     width: 100vw;
@@ -170,75 +170,51 @@
     .flex-cards-top{
         display: none;
     }
-    .flex-middle-section{
-        display: flex;
-        justify-content: center;
-        gap: calc(var(--size)*18);
-        top: calc(var(--size));
-        position: relative;
-        align-items: center;
-        width: calc(var(--size)*30);
-    }
     .flex-bottom-section{
-        display: flex;
+        width: 800px;
         justify-content: center;
-        gap: calc(var(--size));
-        bottom: calc(var(--size)*5);
-        position: relative;
+        gap: 100px;
         align-items: center;
-        width: calc(var(--size)*45);
-    }
-    .yoga-image{
-        width: calc(var(--size)*20);
-    }
-    .layout-image{
-        width: calc(var(--size)*20);
-        display: none;
-    }
-    .activity-lower-2{
-        display: block;
-        width: calc(var(--size)*16);
-        height: calc(var(--size)*17);
-    }
-    .phone-image-bottom img{
-        width: calc(var(--size)*22);
-        bottom: calc(var(--size)*5);
-        position: relative;
-        margin-left: calc(var(--size)*11);
-    }
-    .astrologist-image{
-        width: calc(var(--size)*22);
-    }
-    .calendar-lower{
-        width: calc(var(--size)*25);
-        height: calc(var(--size)*25);
-        align-self: center;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .open-images{
         height: 70vh;
-        /* overflow: hidden; */
+        margin-top: 15vh;
+    }
+    .yoga-image{
+        width: 500px;
+    }
+    .individual-training{
+        padding: 0;
+    }
+    .layout-image{
+        display: none;
+    }
+    .phone-image-bottom img{
+        width: 200px;
+        bottom: calc(var(--size)*5);
+        position: relative;
+    }
+    .calendar-lower{
+        width: 300px;
+        height: 300px;
     }
     .astrologist{
         order: 2;
+        width: 200px;
     }
-    .open-world-header{
-        font-size: calc(var(--size)*3);
-        width: 80%;
-        text-align: center;
-        font-family: 'Open Sans';
-        color: transparent;    
-        -webkit-background-clip: text;
-        background-clip: text;
-        background-image: linear-gradient(to bottom, white, #7037EB);
-        display: table;
-        margin-bottom: 30px;
+    .flex-middle-section{
+        width: 800px;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 100px;
     }
-    .open-world{
-        position: relative;
-        margin-top: 20vh;
-        color: white;
-        overflow-x: hidden;
-        background: #0F0A18;
+    .astrologist-image{
+        width: 300px;
+    }
+    .activity-lower-2{
+        display: block;
     }
 }
 @media screen and (max-width:430px){
@@ -259,26 +235,36 @@
         background-image: linear-gradient(to bottom, white, #7037EB);
         display: table;
     }
-    .open-images {
-        height: 65vh;
-        /* overflow: hidden; */
+    .flex-middle-section{
+        width: 800px;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 50px;
+    }
+    .flex-bottom-section{
+        width: 800px;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .open-images{
+        height: 80vh;
+    }
+    .activity-lower-2{
+        display: block;
+        width: 150px;
+        height: 150px;
+    }
+    .layout-image{
+        display: none;
+    }
+    .open-world{
+        position: relative;
+        margin-top: 20vh;
+        color: white;
+        overflow-x: hidden;
+        background: transparent;
     }
 }
-/* @media screen and (max-height: 1200px){
-    .open-images{
-        height: 100vh;
-        overflow: hidden;
-    }
-}
-@media screen and (max-height: 1080px){
-    .open-images{
-        height: 100vh;
-        overflow: hidden;
-    }
-}
-@media screen and (max-height: 1000px){
-    .open-images{
-        height: 50vh;
-        overflow: hidden;
-    }
-} */
