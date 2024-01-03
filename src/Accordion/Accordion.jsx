@@ -14,7 +14,7 @@ export const Accordion = ({faqList}) => {
             <h1 className="accordion-header">FAQ’s</h1>
         </div>
         <div className="accordion-block">
-            {faqList.map((faqItem, id)=>{
+            {faqList?.map((faqItem, id)=>{
                 return (
                         <div className="accordion-item-section" id="faq">
                             <div className="accordion-item" onClick={() => clickHandler(id)}>

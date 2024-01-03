@@ -8,7 +8,7 @@ html{
     width: 100vw;
     height: 100vh;
     position: relative;
-    margin-top: 20vh;
+    margin-top: 10vh;
     color: white;
     padding-right: 15vw;
     padding-left: 15vw;
@@ -209,12 +209,12 @@ html{
         padding-right: 0;
     }
     .card-3{
-      order: 3;
-      padding-right: 30px;
-      padding-left: 30px;
-      height: calc(var(--size)*75);
-      padding-top: calc(var(--size)*55);
-      padding-bottom: 130px;
+        order: 3;
+        padding-right: 20px;
+        padding-left: 20px;
+        height: calc(var(--size)*55);
+        padding-top: calc(var(--size)*42);
+        padding-bottom: 70px;
     }
     .phone-card-content, .card-content{
          font-size: 12px;
@@ -226,13 +226,39 @@ html{
     }
     .ion-girl-header{
         margin-top: -100px;
-        font-size: calc(var(--size)*2);
+        font-size: calc(var(--size)*1.8);
         font-weight: 900;
 
     }
     .ion-girl-content{
         line-height: 18px;
         font-family: 'Open Sans';
-        font-size: calc(var(--size)*1.7);
+        font-size: calc(var(--size)*1.3);
+    }
+    .third-section{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        margin-top: 3vh;
+        color: white;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        background: radial-gradient(
+            circle,
+            #4e21c9 3%,
+            #381f6a 20%,
+            #251741 25%,
+            #1a112c 30%,
+            #0F0A18 40%,
+            #0F0A18 50%
+          );
+    }
+    .card-header-section{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 0px;
     }
 }

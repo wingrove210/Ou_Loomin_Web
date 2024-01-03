@@ -15,13 +15,22 @@ function Header(){
                         <a className="costs-item" href='#costs'>Тарифы</a>
                         <a className="costs-item" href='#faq'>FAQ</a>
                         <div className="header-buttons">
-                            <a href='/register' style={{textDecoration: "none", paddingTop: "10px"}} className="registration">Регистрация</a>
+                        <a href='register' class="buttonHover-reg">Регистрация</a>
+                            {/* <a href='/register' style={{textDecoration: "none", paddingTop: "10px"}} className="registration">Регистрация</a> */}
                             <div className="btn-login">
-                                <button className="login">Вход</button>
+                                <a href='auth' className="login">Вход</a>
                             </div>
                         </div>
                     </ul>
-                    <img src={menu} alt="" className="menu" onClick={()=>setMenuActive(!menuActive)}/>
+                    {/* <img src={menu} alt="" className="menu" onClick={()=>setMenuActive(!menuActive)}/> */}
+                    <div className='menu'>
+                        <input type="checkbox" id="checkbox" onClick={()=>setMenuActive(!menuActive)}/>
+                        <label for="checkbox" class="toggle">
+                            <div className="bars" id="bar1"></div>
+                            <div className="bars" id="bar2"></div>
+                            <div className="bars" id="bar3"></div>
+                        </label>
+                    </div>
                 </div>
             </header>
             <Menu active={menuActive} setActive={setMenuActive}/>

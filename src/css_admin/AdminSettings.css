@@ -1,0 +1,151 @@
+:root {
+    --size: calc(1vh + 1vw);
+}
+.settings-section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    bottom: 210vh;
+    overflow-y: hidden;
+    padding-right: 5vw;
+}
+.main-edit-settings{
+    width: 50%;
+    height: 71%;
+    background-color: rgba(36, 38, 58, 30%);
+    border-radius: 30px;
+    overflow-y: hidden;
+    padding: 20px 15%;
+}
+.admin-edit{
+    /* overflow: hidden; */
+    height: 100vh;
+    text-align: center;
+}
+.password-text{
+     color: white;
+     margin-bottom: 40px;
+     font-family: 'AVA';
+}
+.elements{
+    width: 100vw;
+    padding-left: 5vw;
+}
+.ava{
+    width: 60px;
+}
+.camera{
+    position: relative;
+    bottom: 15px;
+}
+.profile-img{
+    display: flex;
+    flex-direction: column;
+}
+.profile-img p{
+    color: #575757;
+    font-size: 10px;
+}
+.photo-field{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.main-password-admin{
+    width: 100%;
+}
+.main-password-admin li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    color: white;
+}
+.main-password-admin li p{
+    padding-bottom: 20px;
+    font-family: 'AVA';
+    color: #7A7E80;
+}
+.main-password-admin li:first-child p:first-child{
+    color: white;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 900;
+}
+.main-password-admin li p:last-child{
+    color: #464A4D;
+    font-family: "Open Sans";
+    font-size: 11px;
+    text-align: right;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+.main-password-admin li input{
+    background: transparent;
+    max-width: 100%;
+    height: 45px;
+    padding: 10px;
+    padding-left: 40px;
+    /* text-align: center; */
+    border: 1px solid white;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+    z-index: 100;
+    border-radius: 10px;
+    font-family: 'AVA';
+}
+.main-password-admin li input:focus{
+    color: white;
+    background: transparent;
+    outline-color: rgb(97, 46, 150);
+    box-shadow: -3px -3px 15px rgb(97, 46, 150);
+    transition: .1s;
+    transition-property: box-shadow;
+    font-family: 'Open Sans';
+}
+.user-image-holder-2{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 42px;
+}
+input::-ms-reveal { color: white; }
+.chenge-password{
+    font-family: 'Open Sans';
+}
+.footer-settings-section{
+    position: relative;
+    top: -190vh;
+}
+@media screen and (max-width: 834px){
+    .settings-section{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        bottom: 125vh;
+        overflow-y: hidden;
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+    .main-edit-settings{
+        width: 100%;
+        height: 71%;
+        background-color: rgba(36, 38, 58, 30%);
+        border-radius: 30px;
+        overflow-y: hidden;
+        padding: 20px 5%;
+    }
+    .settings-section-right{
+        position: relative;
+        top: -5vh;
+    }
+    .footer-settings-section{
+        position: relative;
+        top: -70vh;
+    }
+}

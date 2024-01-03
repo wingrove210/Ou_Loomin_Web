@@ -7,7 +7,7 @@ function Section4(){
 <section className="meditation-way">
         <div className="meditation-grid">
             <div className="way-item">
-                <h1 className="way-header">Медитация — <br/> 
+                <h1 className="way-header">Медитация: <br/> 
                     путь к ясности</h1>
             </div>
             <div className="way-content-block">

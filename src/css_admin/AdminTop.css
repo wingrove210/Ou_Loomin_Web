@@ -1,0 +1,126 @@
+:root {
+    --size: calc(1vh + 1vw);
+}
+
+.admin-top-bar-section{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    bottom: 80vh;
+    margin-left: 18vw;
+}
+.admin-top-bar{
+    height: 10%;
+    background-color: rgba(36, 38, 58, 30%);
+    width: 65vw;
+    -webkit-border-top-right-radius: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    display: flex;
+    gap: 70%;
+    padding: 30px 40px;
+    align-items: center;
+    justify-content: center;
+    color: #DBDFEA;
+}
+.admin-top-bar .user-name{
+    font-family: 'AVA';
+}
+
+.top-bar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+@media screen and (max-width: 1600px){
+    .admin-top-bar{
+        height: 10%;
+        background-color: rgba(36, 38, 58, 30%);
+        width: 70vw;
+        -webkit-border-top-right-radius: 30px;
+        -webkit-border-bottom-left-radius: 30px;
+        display: flex;
+        /* gap: calc(var(--size)*20); */
+        padding: 30px 20px;
+        align-items: center;
+        justify-content: space-between;
+        color: #DBDFEA;
+    }
+    .user-name{
+        width: 50px;
+    }
+    .admin-top-bar p{
+        width: 120px;
+        font-size: calc(var(--size)*0.5);
+    }
+}
+@media screen and (max-width: 1300px){
+    .admin-top-bar{
+        height: 10%;
+        background-color: rgba(36, 38, 58, 30%);
+        width: 70vw;
+        -webkit-border-top-right-radius: 30px;
+        -webkit-border-bottom-left-radius: 30px;
+        display: flex;
+        /* gap: calc(var(--size)*20); */
+        padding: 30px 20px;
+        align-items: center;
+        justify-content: space-around;
+        color: #DBDFEA;
+    }
+    .user-name{
+        width: 50px;
+    }
+    .admin-top-bar p{
+        width: 100px;
+        font-size: calc(var(--size)*0.4);
+    }
+}
+@media screen and (max-width: 834px){
+    .admin-top-bar-section{
+        height: 80vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        bottom: -6vh;
+        margin-left: 0vw;
+    }
+    .admin-top-bar{
+        height: 8%;
+        background-color: rgba(36, 38, 58, 30%);
+        width: 90vw;
+        -webkit-border-top-right-radius: 30px;
+        -webkit-border-bottom-left-radius: 30px;
+        display: flex;
+        gap: 30%;
+        padding: 30px 40px;
+        align-items: center;
+        justify-content: center;
+        color: #DBDFEA;
+    }
+    .admin-top-bar .user-name{
+        font-family: 'AVA';
+    }
+    .top-bar-list li{
+        width: 20px;
+    }
+    .top-bar-list li img{
+        width: 20px;
+    }
+    .user-name{
+        padding-right: 60px;
+        width: 30px;
+    }
+    .top-bar-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .hello-aliana{
+        font-size: 8px !important;
+    }
+}

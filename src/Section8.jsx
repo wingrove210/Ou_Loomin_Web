@@ -1,5 +1,5 @@
 import './css/Section8.css';
-import plusImage from './media/Union.png';
+// import plusImage from './media/Union.png';
 import { Accordion } from './Accordion/Accordion';
 
 const faqList = [

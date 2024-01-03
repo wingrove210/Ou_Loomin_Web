@@ -3,21 +3,21 @@ import 'swiper/css/effect-coverflow'
 import buttonNext from './media/Button-Next.png';
 import buttonPrev from './media/Button-Prev.png';
 import triangle_play from './media/Polygon.svg';
-import { Swiper, SwiperSlide, useSwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
 import SwiperCore from 'swiper'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import { useState } from 'react';
+// import { useState } from 'react';
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
 function Section7() {
-    const [isActive, setIsActive] = useState(false);
-    const swiperSlide = useSwiperSlide()
-    const activeSilde = isActive ? 'active' : '';
+    // const [isActive, setIsActive] = useState(false);
+    // const swiperSlide = useSwiperSlide()
+    // const activeSilde = isActive ? 'active' : '';
     return (
         <section className="slider-section" id="costs">
             <div className="header-strings">
@@ -69,7 +69,7 @@ function Section7() {
                 <li>Истории</li>
             </ul>
             <div className='choose-btn'>
-                    <button className="choose">Выбрать</button>
+                    <a href="#" className="choose">Выбрать</a>
             </div>
         </SwiperSlide>
         <SwiperSlide
@@ -85,7 +85,7 @@ function Section7() {
                     <li>Доступ к новым функция навсегда</li>
                 </ul>
                 <div className='choose-btn'>
-                        <button className="choose">Выбрать</button>
+                        <a href="#" className="choose">Выбрать</a>
                 </div>
           </div>
       </div>
@@ -101,15 +101,15 @@ function Section7() {
               <li>Нотальная карта</li>
           </ul>
           <div className='choose-btn'>
-                  <button className="choose">Выбрать</button>
+                  <a href="#" className="choose">Выбрать</a>
           </div>
         </SwiperSlide>
       </Swiper>
       </div>
             <div className='under-slider-btn-section'>
                 <div className="under-slider-btn">
-                    <button className="try-btn">Попробовать бесплатно</button>
-                    <button className="watch-video"><img src={triangle_play} alt="triangle" className="polygon" /><span>Смотреть видео</span></button>
+                    <a className="try-btn slider-one">Попробовать бесплатно</a>
+                    <a className="watch-video slider-one"><img src={triangle_play} alt="triangle" className="polygon" /><span>Смотреть видео</span></a>
                 </div>
             </div>
         </section>

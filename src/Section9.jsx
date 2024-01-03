@@ -8,15 +8,15 @@ function Section9(){
         <div className='lower-block-section'>
             <div className="lower-block">
                 <div className='lower-section-header'>
-                    <h1>Мир внутри тебя — всего в <br/>одном клике</h1>
+                    <h1>Мир внутри тебя — всего  <br/>в одном клике</h1>
                 </div>
                 <div className='abzats-lower-section'>
                     <p>Наше приложения предлагает возможность соединяться с сообществом единомышленников, обмениваться опытом, участвовать в групповых медитациях или получать поддержку от экспертов в этой области.
                     </p>
                 </div>
                 <div className="lower-btn">
-                    <button className="try-btn second-one">Попробовать бесплатно</button>
-                    <button className="watch-video second-one">Наши социальные Сети</button>
+                    <a href='/#' className="try-btn second-one">Попробовать бесплатно</a>
+                    <a href='/#' className="watch-video second-one">Наши социальные Сети</a>
                 </div>
             </div>
             <footer>
@@ -56,8 +56,24 @@ function Section9(){
                     <div className="buttons-lowest">
                         <p>Скачать приложение</p>
                         <ul>
-                            <button className="android"><img src={android} alt="" className='android-img'/>ANDROID</button>
-                            <button className="apple-os"><img src={apple} alt=""/>OSX</button>
+                            <a href="#" class="playstore-button">
+                                <span class="icon-ios">
+                                    <img src={android} alt="" />
+                                </span>
+                                <span class="texts">
+                                    <span class="text-1">Download form</span>
+                                    <span class="text-2">Google Play</span>
+                                </span>
+                            </a>
+                                <a href="#" class="playstore-button">
+                                    <span class="icon-ios">
+                                        <img src={apple} alt="" />
+                                    </span>
+                                    <span class="texts">
+                                        <span class="text-1">Download form</span>
+                                        <span class="text-2">App store</span>
+                                    </span>
+                                </a>
                         </ul>
                     </div>
                 </div>

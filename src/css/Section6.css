@@ -17,13 +17,13 @@
 
       );
       background-position-y: 200px;
-      background-position-x: calc(var(--size)*(-25));
+      background-position-x: calc(var(--size)*(-15));
       background-repeat: no-repeat;
       background-size: calc(var(--size)*100) calc(var(--size)*25);
 }
 .open-images{
     height: calc(var(--size)*25);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .world-header-section{
     width: 100vw;
@@ -81,7 +81,7 @@
     padding-left: 15vw;
     justify-content: center;
     gap: calc(var(--size)*18);
-    bottom: calc(var(--size)*5);
+    bottom: calc(var(--size)*8);
     position: relative;
     align-items: center;
 }
@@ -99,7 +99,7 @@
     position: relative;
     padding-left: 5vw;
     padding-right: 5vw;
-    bottom: calc(var(--size)*10);
+    bottom: calc(var(--size)*14);
 }
 .individual-training{
     background-size: 100% 100%;
@@ -115,6 +115,8 @@
 .phone-image-bottom{
     text-align: center;
     align-self: end;
+    position: relative;
+    top: 100px;
 }
 .phone-image-bottom img{
     width: calc(var(--size)*10);
@@ -166,6 +168,19 @@
 .activity-lower-2{
     display: none;
 }
+.blur{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+.blur-img{
+    height: 200px;
+    width: 100vw;
+    position: relative;
+    top: 90vh;
+    backdrop-filter: blur(35px);
+}
 @media screen and (max-width:800px){
     .flex-cards-top{
         display: none;
@@ -183,7 +198,7 @@
         margin-top: 15vh;
     }
     .yoga-image{
-        width: 500px;
+        width: 200px;
     }
     .individual-training{
         padding: 0;
@@ -211,7 +226,7 @@
         gap: 100px;
     }
     .astrologist-image{
-        width: 300px;
+        width: 200px;
     }
     .activity-lower-2{
         display: block;
@@ -223,6 +238,7 @@
         margin-top: 10vh;
         color: white;
         overflow-x: hidden;
+        overflow: hidden;
     }
     .open-world-header {
         font-size: 30px;
@@ -237,9 +253,9 @@
     }
     .flex-middle-section{
         width: 800px;
-        left: 50%;
+        left: 40%;
         transform: translateX(-50%);
-        gap: 50px;
+        gap: 100px;
     }
     .flex-bottom-section{
         width: 800px;
@@ -262,9 +278,13 @@
     }
     .open-world{
         position: relative;
-        margin-top: 20vh;
+        margin-top: 5vh;
         color: white;
         overflow-x: hidden;
         background: transparent;
+    }
+    .open-images{
+        height: calc(var(--size)*25);
+        overflow: visible;
     }
 }

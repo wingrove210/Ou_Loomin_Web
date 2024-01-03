@@ -7,6 +7,7 @@ import astrologist from './media/astrologist-image.png'
 import yoga from './media/Yoga.png'
 import layout from './media/layout.png'
 import activity2 from './media/activitysec6.png'
+import blur from './media/Rectangle 231.png'
 
 function Section6(){
     return(
@@ -39,6 +40,9 @@ function Section6(){
                 <img src={activity2} alt="" className="activity-lower-2"/>
             </div>
         </div>
+        {/* <div className="blur">
+                <img src={blur} alt="" className="blur-img" />
+            </div> */}
             {/* <div className="phone-image-bottom">
                 <img src={phonemage6sec} alt="" />
             </div> */}

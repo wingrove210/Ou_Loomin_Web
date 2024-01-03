@@ -1,0 +1,283 @@
+:root {
+    --size: calc(1vh + 1vw);
+}
+ul{
+    list-style: none;
+}
+.admin-edit{
+    background: radial-gradient(
+        circle,
+        #4e21c9 3%,
+        #381f6a 15%,
+        #251741 25%,
+        #1a112c 30%,
+        #0F0A18 40%,
+        #0F0A18 50%
+        );
+        background-position-y: 520px;
+        background-repeat: no-repeat;
+        height: 100vh;
+}
+.main-admin-edit-sec{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    bottom: 210vh;
+    overflow-y: hidden;
+    padding-right: 10vw;
+    /* background: radial-gradient(at 10% 10%, #6F3CF6 10%, #4b338e 30%, #36285e 40%, #1f1831 50%, #0F0A18 70%); */
+}
+.personal-data{
+    font-family: 'Dela';
+    font-size: 15px;
+}
+.main-admin-edit{
+    width: 50%;
+    height: 71%;
+    background-color: rgba(36, 38, 58, 30%);
+    border-radius: 30px;
+    /* overflow-y: hidden; */
+    padding: 20px 10%;
+}
+.admin-edit{
+    /* overflow-x: hidden; */
+    /* height: 100vh; */
+    text-align: center;
+}
+.profile-text{
+     color: white;
+     margin-bottom: 40px;
+     font-family: 'AVA';
+}
+.elements{
+    width: 100vw;
+    padding-left: 5vw;
+}
+.ava{
+    width: 60px;
+}
+.camera{
+    position: relative;
+    bottom: 15px;
+}
+.profile-img{
+    display: flex;
+    flex-direction: column;
+}
+.profile-img p{
+    color: #575757;
+    font-size: 10px;
+}
+.photo-field{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.main-fields-admin{
+    width: 100%;
+    margin-top: -30px;
+}
+.main-fields-admin li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    color: white;
+}
+.main-fields-admin li p{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'Open Sans';
+}
+.main-fields-admin li input{
+    background: transparent;
+    max-width: 100%;
+    height: 45px;
+    padding: 10px;
+    padding-left: 40px;
+    /* text-align: center; */
+    border: 1px solid white;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+    z-index: 100;
+    border-radius: 10px;
+    font-family: 'AVA';
+}
+.main-fields-admin li input:focus{
+    color: white;
+    background: transparent;
+    outline-color: rgb(97, 46, 150);
+    box-shadow: -3px -3px 15px rgb(97, 46, 150);
+    transition: .1s;
+    transition-property: box-shadow;
+    font-family: 'Open Sans';
+}
+.user-image-holder{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 8px;
+}
+.go-pro-img{
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.go-pro-img img{
+    width: 90vw;
+    height: 85vh;
+}
+.lines-profile{
+    position: absolute;
+    top: 70vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    overflow: hidden;
+    height: 30vh;
+    width: 100vw;
+}
+.footer-profile-section{
+    top: -190vh;
+    position: relative;
+}
+@media screen and (max-height: 900px){
+    .profile-text{
+        color: white;
+        margin-bottom: 2vh;
+   }
+   .profile-img{
+        display: flex;
+        flex-direction: column;
+        width: 5vh;
+        height: 5vh;
+    }
+    .profile-img p{
+        color: #575757;
+        font-size: 2px;
+        margin-top: -5px;
+    }
+    .camera{
+        position: relative;
+        bottom: 15px;
+        width: 2vh;
+        height: 2vh;
+    }
+    .main-fields-admin li p{
+        padding-bottom: 20px;
+        font-size: calc(var(--size)*0.7);
+    }
+    .main-fields-admin li input{
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px grey solid;
+        background: transparent;
+        margin-bottom: 3vh;
+        padding-left: 30px;
+        padding-bottom: 3px;
+        font-size: calc(var(--size)*0.7);
+    }
+    
+}
+@media screen and (max-width: 834px) {
+    .main-admin-edit-sec{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        bottom: 126vh;
+        overflow-y: visible;
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+    .admin-edit{
+        background: radial-gradient(
+            circle,
+            #4e21c9 3%,
+            #381f6a 15%,
+            #251741 25%,
+            #1a112c 30%,
+            #0F0A18 40%,
+            #0F0A18 50%
+            );
+            background-position-y: 520px;
+            background-repeat: no-repeat;
+            height: 200vh;
+    }
+    .main-admin-edit{
+        width: 100%;
+        height: 80%;
+        background-color: rgba(36, 38, 58, 30%);
+        border-radius: 30px;
+        overflow-y: visible;
+        /* padding: 20px 10%; */
+    }
+    .lines-profile{
+        display: none;
+    }
+    .admin-edit{
+        overflow: visible;
+        height: 100vh;
+        text-align: center;
+    }
+    .admin-edit{
+        background: transparent;
+            background-position-y: 520px;
+            background-repeat: no-repeat;
+            height: 200vh;
+    }.main-fields-admin li p{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-family: 'Open Sans';
+    }
+    .main-fields-admin li input{
+        width: 100%;
+        border: 2px white solid;
+        background: transparent;
+        margin-bottom: 0vh;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        font-size: calc(var(--size)*1);
+    }
+    .main-fields-admin{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .user-image-holder{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        margin-top: 65px;
+        margin-left: 8px;
+    }
+    .personal-data{
+        font-family: 'Dela';
+        font-size: calc(var(--size)*0.8);
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 414px){
+    .user-image-holder{
+        margin-bottom: 0px;
+        margin-top: 52px;
+    }
+}
+@media screen and (max-width: 390px){
+    .user-image-holder{
+        margin-bottom: 10px;
+        margin-top: 55px;
+    }
+    .footer-profile-section{
+        top: -70vh;
+        position: relative;
+    }
+}

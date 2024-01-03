@@ -34,7 +34,7 @@
     border: 1px #2A2B3A solid;
 }
 .accordion-text-block{
-    width: 60%;
+    width: 85%;
     display: flex;
     gap: 10px;
     font-family: 'Open Sans';
@@ -113,6 +113,6 @@
         width: 100%;
         position: relative;
         padding-bottom: 0px;
-        margin-top: -150px;
+        margin-top: 0px;
     }
 }

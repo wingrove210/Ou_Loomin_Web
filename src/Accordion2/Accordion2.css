@@ -1,0 +1,112 @@
+:root {
+    --size: calc(1vh + 1vw);
+}
+.accordion-text-block-2{
+    display: flex;
+    padding: 0px;
+    color: white;
+    align-items: center;
+}
+.answer-item-block-2{
+    display: none;
+}
+.answer-item-block-2.open{
+    display: block;
+    border:1px solid #2A2B3A;
+    text-align: left;
+    font-size: 12px;
+    font-family: 'Kontora';
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: white;
+}
+
+.accordion-header-2{
+    font-size: 34px;
+    font-family: 'Satoshi Bold';
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, white, #7037EB);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.accordion-block{
+    width: 100%;
+    position: relative;
+    padding-bottom: 150px;
+    margin-top: -190px;
+}
+.accordion-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px #2A2B3A solid;
+}
+.accordion-text-block-2{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    font-family: 'Open Sans';
+}
+.plus-sign-2{
+    width: 13px;
+    height: 13px;
+}
+.plus-sign-section-2{
+    border-left: 1px solid #2A2B3A;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.number-section-2{
+    border-right: 1px solid #2A2B3A;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.number-2{
+    font-size: 15px;
+    font-family: 'Open Sans';
+}
+.plus-sign-section-2, .number-section-2, .accordion-text-2{
+    padding: 10px 15px;
+}
+.accordion-text-2{
+    text-align: left;
+    font-family: 'Kontora';
+    font-weight: 900;
+}
+@media screen and (max-width: 834px){
+    .accordion-text-2{
+        font-size: calc(var(--size)*0.7);
+    }
+    .accordion-text-block-2{
+        width: 80%;
+        display: flex;
+        gap: 10px;
+        font-family: 'Open Sans';
+    }
+    .accordion-header-2{
+        font-size: calc(var(--size)*1.2);
+        font-family: 'Satoshi Bold';
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to right, white, #7037EB);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .answer-item-block-2.open{
+        display: block;
+        border:1px solid #2A2B3A;
+        text-align: left;
+        font-size: calc(var(--size)*0.7);
+        font-family: 'Kontora';
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        color: white;
+    }
+}

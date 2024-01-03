@@ -3,26 +3,28 @@
 }
 .second-section{
     position: relative;
-    margin-top: 65px;
+    margin-top: 300px;
     width: 100vw;
     color: white;
+    height: 100vh;
 }
 .second-section-image{
     position: relative;
-    margin-top: -65px;
+    margin-top: -720px;
     width: 100vw;
     height: 100vh;
-    z-index: 1;
+    z-index: 0;
 }
 .text-block{
-    z-index: 2;
+    z-index: 50;
     width: 500px;
     padding-left: 5vw;
-    margin-top: 50vh;
-    position: absolute;
+    margin-top: 10vh;
+    position: relative;
     font-family: 'Open Sans';
+    padding-top: 000px;
 }
-.logo{
+.logo-2{
     color: #fff;
     letter-spacing: 8px;
     text-shadow:
@@ -91,8 +93,11 @@
 }
 @media  screen and (max-width: 800px) {
     .big-phone-content{
-        font-size: calc(var(--size)*2);
+        font-size: calc(var(--size)*1.1);
         width: 90vw;
+    }
+    .logo-2{
+        display: none;
     }
     /* .second-section{
         position: relative;
@@ -108,6 +113,6 @@
         margin-top: 0;
         width: 100vw;
         color: white;
-        height: calc(var(--size)*50);
+        height: calc(var(--size)*35);
     }
 }
