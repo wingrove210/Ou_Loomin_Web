@@ -31,7 +31,8 @@
     gap: 30px;
     text-align: center;
     padding: 40px 50px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
+    width: 700px;
 }
 .register-header{
     font-size: 35px;
@@ -44,6 +45,11 @@
     color: #D3C2F8;
     font-weight: 500;
 }
+.register-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .register-login, .register-password{
     font-size: 25px;
     padding: 5px 20px;
@@ -55,15 +61,34 @@
     font-family: 'AVA';
     color: white;
 }
-.register-password{
-    margin-bottom: 50px;
-}
 .buttons-low-reg{
     display: flex;
     gap: 40px;
+    width: 100%;
+    justify-content: center;
+}
+.button-telegram{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.telegram-link{
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #7037EB, #6728ee);
+    border-radius: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* width: 310px; */
+}
+.telegram-link img{
+    width: 40px;
+    height: 40px;
+    z-index: 2;
 }
 .try-btn-reg{
-    padding: 10px 30px;
+    padding: 10px 100px;
     border-radius: 41px;
     background-color: #010314;
     color: white;
@@ -79,7 +104,7 @@
     box-shadow: 1px 1px 19px 1px #7037EB;
 }
 .watch-video-reg{
-    padding: 10px 30px;
+    padding: 10px 70px;
     border-radius: 41px;
     background-color: #010314;
     color: white;
@@ -91,16 +116,18 @@
     z-index: 20;
 }
 .gulls-img-2{
-    width: 1200px;
+    width: 750px;
     display: flex;
     justify-content: center;
     text-align: center;
     position: relative;
     margin-bottom: 0vh;
     z-index: -2;
-    transform: scale(0.7);
+    /* transform: scale(0.7); */
     z-index: 10;
-    height: 800px;
+    height: 700px;
+    margin-top: 120px;
+
 }
 .gulls-2{
     display: flex;
@@ -109,13 +136,147 @@
     position: relative;
     bottom: 102vh;
     z-index: -2;
-    transform: scale(0.7);
+    /* transform: scale(0.7); */
     z-index: 10;
+    height: 800px;
 }
 .img-lines-block-2{
-    position: relative;
-    bottom: 130vh;
+    position: absolute;
+    top: 60vh;
 }
 .lines-img-2{
-    margin-left: 300px;
+    margin-left: 250px;
+}
+.qr-code-img-2{
+    width: 74px;
+    height: 74px;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+.qr-code-2{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -100px;
+}
+.qr-code-block-2{
+    background-color: rgba(153, 91, 239, 0.4);
+    width: 300px;
+    display: flex;
+    padding:5px;
+    padding-top: 8px;
+    padding-right: 8px;
+    border-radius: 25px;
+    position: absolute;
+    top: 85vh;
+}
+.qr-code-text-2{
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.qrcode-header-2{
+   margin-bottom: 13px;
+   font-size: 13px;
+   color: #fff;
+   font-family: 'Open Sans';
+}
+.qr-code-content-2{
+   font-size: 16px;
+   text-transform: uppercase;
+   font-family: 'Lena';
+   color: #A58CF4;
+}
+.wave-text-2{
+    font-family: 'Wave';
+    transform: rotate(-90deg);
+    width: 200px;
+    position: relative;
+    bottom: 28vh;
+    left: 13vw;
+    color: #A58CF4;
+    font-size: 12px;
+    display: block;
+}
+@media screen and (max-width: 1600px){
+    .register-login, .register-password{
+        font-size: 18px;
+        padding: 5px 20px;
+        background-color: rgba(153, 91, 239, 5%);
+        border: 1px #FFF9F9 solid;
+        border-radius: 10px;
+        width: 100%;
+        z-index: 100;
+        font-family: 'AVA';
+        color: white;
+    }
+    .register-fields{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .qr-code-2{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .qr-code-block-2{
+        background-color: rgba(153, 91, 239, 0.4);
+        width: 300px;
+        display: flex;
+        padding:5px;
+        padding-top: 8px;
+        padding-right: 8px;
+        border-radius: 25px;
+        position: absolute;
+        top: 88vh;
+    }
+    .lines-img-2{
+        margin-left: 0;
+    }
+    .wave-text-2{
+        display:block;
+    }
+}
+@media screen and (max-width: 1300px){
+    .wave-text-2{
+        display: none;
+    }
+    .gulls-img-2{
+        width: 750px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        margin-bottom: 0vh;
+        z-index: -2;
+        /* transform: scale(0.7); */
+        z-index: 10;
+        height: 650px;
+        margin-top: 140px;
+    
+    }
+    .register-block{
+        background-color: rgba(199, 158, 255, 10%);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 40px 50px;
+        margin-bottom: 50px;
+        width: 700px;
+    }
+}
+@media screen and(max-width: 800px){
+    .register-block{
+        background-color: rgba(199, 158, 255, 10%);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 40px 50px;
+        margin-bottom: 50px;
+        width: 20vw;
+    }
 }
